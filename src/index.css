@@ -1,13 +1,467 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Estedad";
+  src: url("../public/fonts/Estedad-Regular.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "EstedadBold";
+  src: url("../public/fonts/Estedad-Bold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "EstedadLight";
+  src: url("../public/fonts/Estedad-Light.ttf") format("truetype");
+}
+
+:root {
+  /* color */
+  --site-bg: #fff;
+  --orange: #f54749;
+  --white: #fff;
+  --black: #000;
+  --dark: #231f20;
+  --gold: #dbbe8f;
+  --smoky: #d9d9d9;
+  --smoky2: #d3d2d2;
+
+  /* font */
+  --font-8: 8px;
+  --font-10: 10px;
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --line-22: 22px;
+
+  /* border-radius */
+  --radius-8: 8px;
+  --radius-14: 14px;
+  --radius-16: 16px;
+  --radius-18: 18px;
+  --radius-36: 36px;
+  --radius-48: 48px;
+  --radius-55: 55px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body,
+html {
+  direction: rtl;
+  text-align: right;
+  background-color: darkgrey;
+}
+
+/*  */
+.button {
+  all: unset;
+  border-radius: var(--radius-14);
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--dark);
+  color: var(--gold);
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button-sm {
+  height: 28px;
+  min-width: 82px;
+  font-size: var(--font-10);
+  border-radius: var(--radius-8);
+}
+
+.button-not {
+  /* background-color: var(--white);
+  border: 1px solid var(--smoky);
+  color: var(--smoky2); */
+  background-color: var(--white);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
+
+.title {
+  color: var(--black);
+  font-size: var(--font-16);
+  font-weight: bold;
+}
+
+/*  */
+
+main {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--site-bg);
+  color: var(--dark);
+  font-family: "Estedad";
+  font-size: var(--font-14);
+  min-height: 100vh;
+  line-height: var(--line-22);
+}
+
+/* auth */
+.auth-page {
+  text-align: center;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page img {
+  width: 70%;
+}
+
+.auth-page .head {
+  background-color: #f54749;
+  color: var(--white);
+  border-radius: 0% 0% 150% 150% / 0% 0% 23% 23%;
+  position: relative;
+  animation: drop 0.8s ease-in-out;
+}
+
+@keyframes drop {
+  0% {
+    top: -350px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.auth-page p {
+  font-weight: bold;
+  width: 315px;
+  margin: 0 auto;
+  line-height: var(--line-22);
+}
+
+.auth-page .number-img img {
+  max-width: 63%;
+  position: relative;
+  bottom: -30px;
+}
+
+.auth-page .number-input {
+  border-radius: var(--radius-55);
+  text-align: center;
+  letter-spacing: 4px;
+  border: 1px solid var(--dark);
+}
+
+.auth-page .number-input::placeholder {
+  opacity: 0.7;
+  letter-spacing: 0;
+}
+
+.auth-page .code-input {
+  text-align: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 9px;
+  background-color: var(--smoky);
+  caret-color: transparent;
+  direction: ltr;
+}
+
+.auth-page .head a {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-page .head a i {
+  font-size: 23px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* end auth */
+
+/* home page */
+
+.home .head svg {
+  font-size: 24px;
+}
+
+.home .swiper-slide {
+  width: auto;
+}
+
+.home .swiper-pagination {
+  position: static;
+  margin-top: 15px;
+}
+
+.home .swiper-pagination-bullet {
+  width: 14px;
+  height: 4px;
+  display: inline-block;
+  border-radius: 16px;
+  background: var(--smoky2);
+  opacity: 1;
+}
+
+.home .swiper-pagination-bullet-active {
+  width: 30px;
+  background: var(--orange);
+}
+
+/* nazdik tarin ha */
+.home .nearest {
+  border-radius: var(--radius-48);
+  width: 225px;
+  height: 183px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("../src/pictures/test/bgtest1.png"); */
+  background-position: center;
+  direction: ltr;
+}
+
+.home .nearest div {
+  border-radius: var(--radius-36);
+  text-align: center;
+  background: linear-gradient(
+    344deg,
+    rgba(26, 31, 35, 0) 77%,
+    rgba(219, 219, 219, 1) 100%
+  );
+  padding: 0.5px;
+}
+
+.home .nearest div section {
+  padding: 9px;
+  min-height: 117px;
+  min-width: 150px;
+  max-width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: inherit;
+  background-color: #ededed43;
+  backdrop-filter: blur(5px);
+  color: var(--black);
+}
+
+.home .nearest div section h5 {
+  font-size: var(--font-16);
+  font-family: "EstedadBold";
+  margin-bottom: 3px;
+}
+
+.home .nearest div section p {
+  font-size: var(--font-10);
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.home .nearest div section span {
+  font-size: 0.85rem;
+}
+
+/* be sarfe tarin ha */
+.home .show-all {
+  font-size: var(--font-8);
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.home .show-all svg {
+  font-size: 16px;
+  color: var(--orange);
+}
+
+.home .economical {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .economical .name {
+  width: 65px;
+  height: 65px;
+  padding: 5px;
+  border-radius: var(--radius-16);
+  box-shadow: 0px 2px 28px #4b4b581a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-10);
+  font-family: "EstedadBold";
+  margin-left: 14px;
+  position: relative;
+}
+
+.home .economical .name img {
+  position: absolute;
+  width: 30px;
+}
+
+.home .economical .food {
+  border-radius: var(--radius-16);
+  box-shadow: 0px 2px 28px #4b4b581a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-12);
+  overflow: hidden;
+  width: 280px;
+}
+
+.home .economical .food h5 {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: var(--font-12);
+}
+
+.home .economical .food .price {
+  color: var(--orange);
+  margin-bottom: 0;
+}
+
+.home .economical .food .old-price {
+  margin-bottom: 0;
+  color: var(--smoky);
+  text-decoration: line-through;
+}
+
+.home .economical .food .food-image {
+  height: 60px;
+  width: 103px;
+  /* background-image: url("../src/pictures/test/food1.png"); */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.home .economical .food .food-image .rate {
+  width: 40px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: var(--orange);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 20px;
+}
+
+/* denj tarin ha */
+.home .denj {
+  width: 169px;
+  height: 169px;
+  /* background-image: url("../src/pictures/test/denj1.png"); */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: var(--radius-18);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 2px 28px #4b4b581a;
+}
+
+.home .denj .rate{
+  background-color: var(--orange);
+  color: var(--white);
+  width: 45px;
+  height: 19px;
+  font-size: var(--font-10);
+  border-radius: 4px;
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.home .denj .name {
+  color: var(--white);
+  font-family: "EstedadBold";
+  font-size: var(--font-12);
+  min-height: 52px;
+  background: #231f204d;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+}
+
+/* takhfif dar ha */
+.home .offer {
+  width: 125px;
+  height: 137px;
+  /* background-image: url("../src/pictures/test/offer1.png"); */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: var(--radius-18);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0px 2px 28px #4b4b581a;
+}
+
+.home .offer .off{
+  background-color: var(--orange);
+  color: var(--white);
+  width: 55px;
+  height: 20px;
+  font-size: var(--font-10);
+  border-radius: 0 0 4px 4px;
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .offer .name {
+  color: var(--white);
+  height: 42px;
+  background: #231f205f;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  font-size: var(--font-12);
+}
+
+.home .offer .name h6{
+  font-size: var(--font-12);
+  margin-bottom: 3px;
+  font-family: "EstedadBold";
+}
+
+.home .offer .name p{
+  font-family: "Estedad";
+  margin-bottom: 0;
+}
+
+/* end of home page */
