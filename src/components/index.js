@@ -9,6 +9,7 @@ import { OfferSlider } from "./OfferSlider";
 import { HomeSkeleton } from "./skeleton/HomeSkeleton";
 import { ShowMoreHome } from "./ShowMoreHome";
 import { FilterButtonSlider } from "./FilterButtonSlider";
+import { SearchItem } from "./SearchItem";
 
 export {
     NearestCoffe,
@@ -22,4 +23,5 @@ export {
     HomeSkeleton,
     ShowMoreHome,
     FilterButtonSlider,
+    SearchItem,
 };
