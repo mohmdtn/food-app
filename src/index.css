@@ -285,6 +285,7 @@ main {
   font-size: var(--font-8);
   margin-bottom: 0;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .home .show-all svg {

@@ -8,6 +8,7 @@ import { DenjSlider } from "./DenjSlider";
 import { OfferSlider } from "./OfferSlider";
 import { HomeSkeleton } from "./skeleton/HomeSkeleton";
 import { ShowMoreHome } from "./ShowMoreHome";
+import { FilterButtonSlider } from "./FilterButtonSlider";
 
 export {
     NearestCoffe,
@@ -20,4 +21,5 @@ export {
     OfferSlider,
     HomeSkeleton,
     ShowMoreHome,
+    FilterButtonSlider,
 };

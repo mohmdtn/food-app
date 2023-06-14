@@ -4,12 +4,10 @@ import userIcon from '../../pictures/icons/userIcon.svg';
 
 
 import React from "react";
-import { NearestCoffeSlider, EconomicalSlider, DenjSlider, OfferSlider, HomeSkeleton, ShowMoreHome } from "../../components";
+import { NearestCoffeSlider, EconomicalSlider, DenjSlider, OfferSlider, HomeSkeleton, ShowMoreHome, FilterButtonSlider } from "../../components";
 import { MoreContext } from "../../contexts/more_context";
 
 import Badge from '@mui/material/Badge';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 
 export const Home = () => {
   const { loading } = React.useContext(MoreContext);
@@ -43,13 +41,7 @@ export const Home = () => {
 
           {/* filter buttons slider */}
           <section className="pt-4 px-3">
-            <Swiper spaceBetween={16} slidesPerView={"auto"}>
-              <SwiperSlide><button className='button button-sm'>همه</button></SwiperSlide>
-              <SwiperSlide><button className='button button-sm'>کافه</button></SwiperSlide>
-              <SwiperSlide><button className='button button-sm button-not'>فست فود</button></SwiperSlide>
-              <SwiperSlide><button className='button button-sm button-not'>رستوران ایتالیایی</button></SwiperSlide>
-              <SwiperSlide><button className='button button-sm button-not'>رستوران ایرانی</button></SwiperSlide>
-            </Swiper>
+            <FilterButtonSlider />
           </section>
           {/* filter buttons slider */}
 
