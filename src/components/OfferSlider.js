@@ -3,6 +3,8 @@ import offer1 from "../pictures/test/offer1.png";
 import offer2 from "../pictures/test/offer2.png";
 import offer3 from "../pictures/test/offer3.png";
 
+import React from "react";
+import { MoreContext } from "../contexts/more_context";
 import { Offer } from "./Offer";
 import { FaAngleUp } from "react-icons/fa";
 
@@ -10,11 +12,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export const OfferSlider = () => {
+  const { showMore } = React.useContext(MoreContext);
+
   return (
     <>
       <div className="ps-3 d-flex justify-content-between align-items-center mt-4">
         <h5 className="title">تخفیف دار ها</h5>
-        <p className="show-all">
+        <p className="show-all" onClick={() => showMore("70vh", "offer")}>
           نمایش همه <FaAngleUp />
         </p>
       </div>

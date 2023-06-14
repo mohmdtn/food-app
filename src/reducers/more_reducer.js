@@ -1,7 +1,8 @@
 const more_reducer = (state, action) => {
 
-  if (action.type === "HOME_FILTER") {
-    return { ...state };
+  if (action.type === "SHOW_MORE") {
+
+    return { ...state, show_more: {...state.show_more, height: action.payload.height, item: action.payload.item} };
   }
   
 

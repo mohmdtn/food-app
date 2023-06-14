@@ -7,6 +7,7 @@ import { EconomicalSlider } from "./EconomicalSlider";
 import { DenjSlider } from "./DenjSlider";
 import { OfferSlider } from "./OfferSlider";
 import { HomeSkeleton } from "./skeleton/HomeSkeleton";
+import { ShowMoreHome } from "./ShowMoreHome";
 
 export {
     NearestCoffe,
@@ -18,4 +19,5 @@ export {
     DenjSlider,
     OfferSlider,
     HomeSkeleton,
+    ShowMoreHome,
 };

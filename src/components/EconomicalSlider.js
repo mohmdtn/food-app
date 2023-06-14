@@ -4,22 +4,25 @@ import food2 from "../pictures/test/food2.png";
 import food3 from "../pictures/test/food3.png";
 import logocoffe from "../pictures/test/coffelogo.svg";
 
+import React from "react";
 import { Economical } from "./Economical";
-
+import { MoreContext } from "../contexts/more_context";
 import { FaAngleUp } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Grid } from 'swiper'
-
 import "swiper/css";
 import 'swiper/css/grid';
 
 export const EconomicalSlider = () => {
+  const { showMore } = React.useContext(MoreContext);
+
+
   return (
     <>
       <div className="ps-3 d-flex justify-content-between align-items-center mt-4">
         <h5 className="title">به صرفه ترین ها</h5>
-        <p className="show-all">
+        <p className="show-all" onClick={() => showMore("70vh", "economical")}>
           نمایش همه <FaAngleUp />
         </p>
       </div>

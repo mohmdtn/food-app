@@ -4,9 +4,10 @@ import denj2 from "../pictures/test/denj2.png";
 import denj3 from "../pictures/test/denj3.png";
 import denj4 from "../pictures/test/denj4.png";
 
+import React from "react";
 import { Denj } from "./Denj";
+import { MoreContext } from "../contexts/more_context";
 import mapIcon from '../pictures/icons/mapIcon.svg';
-
 import { FaAngleUp } from "react-icons/fa";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,13 +17,15 @@ import "swiper/css";
 import "swiper/css/grid";
 
 export const DenjSlider = () => {
+  const { showMore } = React.useContext(MoreContext);
+
   return (
     <>
       <div className="ps-3 d-flex justify-content-between align-items-center mt-4">
         <h5 className="title">
           دنج ترین های بابل <img src={mapIcon} alt="" />
         </h5>
-        <p className="show-all">
+        <p className="show-all" onClick={() => showMore("70vh", "denj")}>
           نمایش همه <FaAngleUp />
         </p>
       </div>

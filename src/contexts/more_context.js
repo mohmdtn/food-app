@@ -1,8 +1,12 @@
-import React, { useEffect, useContext, useReducer } from "react";
+import React, { useReducer } from "react";
 import reducer from "../reducers/more_reducer";
 
 const initialState = {
   loading: false,
+  show_more: {
+    height: "0",
+    item: "",
+  },
   home_fiter: ["all", "coffe"],
 };
 
@@ -11,16 +15,12 @@ export const MoreContext = React.createContext();
 export const MoreProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const showMore = () => {
-    dispatch({ type: "SHOW_MORE" });
-  };
-
-  const homeFilter = (name) => {
-    dispatch({ type: "HOME_FILTER", payload: name });
+  const showMore = (height, item) => {
+    dispatch({ type: "SHOW_MORE", payload: { height, item } });
   };
 
   return (
-    <MoreContext.Provider value={{ ...state, homeFilter, showMore }}>
+    <MoreContext.Provider value={{ ...state, showMore }}>
       {children}
     </MoreContext.Provider>
   );
