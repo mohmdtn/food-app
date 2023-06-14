@@ -4,16 +4,15 @@ import userIcon from '../../pictures/icons/userIcon.svg';
 
 
 import React from "react";
-
 import { NearestCoffeSlider, EconomicalSlider, DenjSlider, OfferSlider, HomeSkeleton, ShowMoreHome } from "../../components";
 import { MoreContext } from "../../contexts/more_context";
 
+import Badge from '@mui/material/Badge';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export const Home = () => {
   const { loading } = React.useContext(MoreContext);
-
 
   if (loading) {
     return (
@@ -27,14 +26,18 @@ export const Home = () => {
         <section className="home">
           <section className="head pt-4 d-flex justify-content-around align-items-center text-center">
             <div>
-              <img src={listIcon} alt="" />
+              <Badge badgeContent={1} color="secondary" sx={{ "& .MuiBadge-badge": { backgroundColor: '#f54749' } }}>
+                <img src={listIcon} alt="" />
+              </Badge>
             </div>
             <div>
               <p className="mb-1 fw-bold">مازندران/ بابل/ شهرک بهزاد...</p>
               <img src={mapIcon} alt="" />
             </div>
             <div>
-              <img src={userIcon} alt="" />
+              <Badge badgeContent={3} color="secondary" sx={{ "& .MuiBadge-badge": { backgroundColor: '#f54749' } }}>
+                <img src={userIcon} alt="" />
+              </Badge>
             </div>
           </section>
 
