@@ -4,7 +4,7 @@ import userIcon from '../../pictures/icons/userIcon.svg';
 
 
 import React from "react";
-import { NearestCoffeSlider, EconomicalSlider, DenjSlider, OfferSlider, HomeSkeleton, ShowMoreHome, FilterButtonSlider } from "../../components";
+import { NearestCoffeSlider, EconomicalSlider, DenjSlider, OfferSlider, HomeSkeleton, DrawerHome, FilterButtonSlider } from "../../components";
 import { MoreContext } from "../../contexts/more_context";
 
 import Badge from '@mui/material/Badge';
@@ -72,9 +72,9 @@ export const Home = () => {
           </section>
           {/* off coffe slider */}
 
-          {/* show moer */}
-          <ShowMoreHome />
-          {/* show moer */}
+          {/* drawer */}
+          <DrawerHome />
+          {/* drawer */}
         </section>
       </main>
     );

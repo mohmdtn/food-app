@@ -5,9 +5,10 @@ import search3 from "../../pictures/test/search3.png";
 
 import searchIcon from "../../pictures/icons/searchIcon.svg"
 import scanIcon from "../../pictures/icons/scanIcon.svg"
+import { HiArrowLeft } from "react-icons/hi";
 
 import React from "react";
-import { FilterButtonSlider, SearchItem, SearchSkeleton } from "../../components";
+import { FilterButtonSlider, SearchItem, SearchSkeleton, DrawerSearch } from "../../components";
 import { MoreContext } from "../../contexts/more_context";
 
 export const Search = () => {
@@ -21,7 +22,10 @@ export const Search = () => {
     return (
       <main>
         <section className="search px-4">
-          <h5 className="page-title py-4">جست و جو</h5>
+          <div className="position-relative d-flex justify-content-center align-items-center">
+            <h5 className="page-title py-4">جست و جو</h5>
+            <div className="back"><HiArrowLeft /></div>
+          </div>
           {/* search section */}
           <section className="search-section">
               <div className="search-box">
@@ -34,7 +38,7 @@ export const Search = () => {
           
           {/* filter buttons slider */}
           <section className="pt-3 mb-4">
-              <FilterButtonSlider />
+            <FilterButtonSlider />
           </section>
           {/* filter buttons slider */}
   
@@ -43,7 +47,12 @@ export const Search = () => {
           <SearchItem bg={search2} rate={3} name={"کباب سرای دنج نشین"} foods={"انواع کباب همراه با برنج و نان تازه"} delivery={"12,000"} address={"مازندران/ بابل/روبه روی دانشگاه نوشیروانی ساختمان پولونیوم..."} />
           <SearchItem bg={search3} rate={3} name={"کباب سرای دنج نشین"} foods={"انواع کباب همراه با برنج و نان تازه"} address={"مازندران/ بابل/روبه روی دانشگاه نوشیروانی ساختمان پولونیوم..."} />
           {/* search content */}
+
+
         </section>
+        {/* drawer */}
+        <DrawerSearch />
+        {/* drawer */}
       </main>
     );
   }

@@ -7,10 +7,12 @@ import { EconomicalSlider } from "./EconomicalSlider";
 import { DenjSlider } from "./DenjSlider";
 import { OfferSlider } from "./OfferSlider";
 import { HomeSkeleton } from "./skeleton/HomeSkeleton";
-import { ShowMoreHome } from "./ShowMoreHome";
+import { DrawerHome } from "./DrawerHome";
 import { FilterButtonSlider } from "./FilterButtonSlider";
 import { SearchItem } from "./SearchItem";
-import { SearchSkeleton } from './skeleton/SearchSkeleton'
+import { SearchSkeleton } from './skeleton/SearchSkeleton';
+import { DrawerSearch } from "./DrawerSearch";
+import { CoffeFood } from "./CoffeFood";
 
 export {
     NearestCoffe,
@@ -22,8 +24,10 @@ export {
     DenjSlider,
     OfferSlider,
     HomeSkeleton,
-    ShowMoreHome,
+    DrawerHome,
     FilterButtonSlider,
     SearchItem,
     SearchSkeleton,
+    DrawerSearch,
+    CoffeFood,
 };

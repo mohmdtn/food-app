@@ -21,7 +21,7 @@ import { FaAngleDown } from "react-icons/fa";
 import mapIcon from '../pictures/icons/mapIcon.svg';
 
 
-export const ShowMoreHome = () => {
+export const DrawerHome = () => {
   const { showMore, show_more } = React.useContext(MoreContext);
 
   

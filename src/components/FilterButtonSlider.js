@@ -10,6 +10,7 @@ export const FilterButtonSlider = () => {
         <SwiperSlide><button className="button button-sm button-not">فست فود</button></SwiperSlide>
         <SwiperSlide><button className="button button-sm button-not">رستوران ایتالیایی</button></SwiperSlide>
         <SwiperSlide><button className="button button-sm button-not">رستوران ایرانی</button></SwiperSlide>
+        <SwiperSlide><button className="button button-sm button-not">رستوران چینی</button></SwiperSlide>
       </Swiper>
     </>
   );
