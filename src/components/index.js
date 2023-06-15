@@ -10,6 +10,7 @@ import { HomeSkeleton } from "./skeleton/HomeSkeleton";
 import { ShowMoreHome } from "./ShowMoreHome";
 import { FilterButtonSlider } from "./FilterButtonSlider";
 import { SearchItem } from "./SearchItem";
+import { SearchSkeleton } from './skeleton/SearchSkeleton'
 
 export {
     NearestCoffe,
@@ -24,4 +25,5 @@ export {
     ShowMoreHome,
     FilterButtonSlider,
     SearchItem,
+    SearchSkeleton,
 };
