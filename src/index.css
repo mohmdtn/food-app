@@ -788,8 +788,9 @@ main {
   font-size: var(--font-16);
   color: var(--dark2);
   text-align: center;
-  padding-bottom: 33px;
+  padding: 33px 0;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .food {
@@ -872,4 +873,50 @@ main {
   line-height: 12px;
   margin-bottom: 0;
 }
+
+.food .add-food div div, .food .add-food div h6 {
+  background-color: var(--orange);
+  width: 60px;
+  color: var(--white);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--smoky);
+}
+
+.food .add-food div div label {
+  font-size: 19px;
+  transition: .4s;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food .add-food div h6 input {
+  all: unset;
+}
+
+.food .add-food div div label:hover {
+  transform: scale(1.6);
+}
+
+.food .add-food .initial-add{
+  color: var(--orange);
+  font-size: 25px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.finish{
+ opacity: .5;
+}
+
+.food .add-food .initial-add:hover {
+  transform: scale(1.6);
+}
+
 /* end of coffe page */

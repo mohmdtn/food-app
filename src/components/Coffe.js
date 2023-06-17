@@ -37,8 +37,13 @@ export const Coffe = () => {
       {/* filter buttons */}
 
       {/* foods section */}
-      <section className="foods px-4 pt-5">
+      <section className="foods px-4">
         <h5 className="category-title">غذای دریایی</h5>
+        <CoffeFood />
+        <CoffeFood />
+        <CoffeFood />
+        <h5 className="category-title">سنتی</h5>
+        <CoffeFood />
         <CoffeFood />
       </section>
       {/* foods section */}

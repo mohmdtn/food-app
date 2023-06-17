@@ -5,14 +5,15 @@ export const CoffeFood = () => {
     <section className="food">
       <section className="add-food">
         {/* <p>اتمام موجودی</p> */}
-        <div>
+        <p className="initial-add">+</p>
+        <div className="d-none">
           <div>
             <label htmlFor="">+</label>
             <input type="hidden" />
           </div>
-          <h6 className="mb-0">1</h6>
+          <h6 className="mb-0"><input type="text" value={'1'} readOnly /></h6>
           <div>
-            <label htmlFor="">_</label>
+            <label htmlFor=""> - </label>
             <input type="hidden" />
           </div>
         </div>
