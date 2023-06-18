@@ -10,25 +10,27 @@ import { AiFillHeart } from "react-icons/ai";
 export const Coffe = () => {
   return (
     <section className="coffe">
+      {/* coffe information */}
       <section className="bg">
         <div className="logo"><img src={logo} alt="" /></div>
         <div className="rate"><AiFillHeart className="ms-1" />2</div>
       </section>
       <section className="info mt-5 px-4">
         <div className="py-2">
-            <h5>کافه رستوران دنج نشین</h5>
-            <img src={deliveryIcon} alt="" />
+          <h5>کافه رستوران دنج نشین</h5>
+          <section><img src={deliveryIcon} alt="" /></section>
         </div>
         <div className="py-2">
-            <p>مازندران/ بابل/روبه روی دانشگاه نوشیروانی ساختمان پولونیوم...</p>
-            <img src={mapIcon} alt="" />
+          <p>مازندران/ بابل/روبه روی دانشگاه نوشیروانی ساختمان پولونیوم...</p>
+          <section><img src={mapIcon} alt="" /></section>
         </div>
         <div className="pt-2 pb-3">
-            <h6>شما با دنجنشین کردن این کافه از تخفیف 10% در رسید خود برخوردار میشوید</h6>
-            <div><img src={logo} alt="" /></div>
+          <h6>شما با دنجنشین کردن این کافه از تخفیف 10% در رسید خود برخوردار میشوید</h6>
+          <div><img src={logo} alt="" /></div>
         </div>
         <button className="button"><img src={profileAddIcon} alt="" /></button>
       </section>
+      {/* coffe information */}
 
       {/* filter buttons */}
       <section className="pe-4 pt-3">

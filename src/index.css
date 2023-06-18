@@ -761,6 +761,10 @@ main {
   margin-bottom: 0;
 }
 
+.coffe .info div section{
+  width: 32px;
+}
+
 .coffe .info div h6 {
   height: 44px;
   font-size: var(--font-9);

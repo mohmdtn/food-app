@@ -36,8 +36,8 @@ export const DrawerSearch = () => {
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
     >
-        <div className="drawer-btn"><div></div></div>
-        <Coffe />
+      <div className="drawer-btn"><div></div></div>
+      <Coffe />
     </section>
   );
 };
