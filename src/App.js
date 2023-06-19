@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Welcome, Register, Home, Search, ProfileIndex, ProfileInfo } from "./pages";
+import { Welcome, Register, Home, Search, ProfileIndex, ProfileInfo, ProfileWallet } from "./pages";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path="/profile">
           <Route index element={<ProfileIndex />} />
           <Route path="info" element={<ProfileInfo />} />
+          <Route path="wallet" element={<ProfileWallet />} />
         </Route>
 
       </Routes>

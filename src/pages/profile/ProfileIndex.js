@@ -50,7 +50,7 @@ export const ProfileIndex = () => {
           </div>
 
           <div className="item">
-            <Link to="/">
+            <Link to="/profile/wallet">
               <div>
                 <Badge badgeContent={1} color="secondary" sx={{ "& .MuiBadge-badge": { backgroundColor: "#f54749" } }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
                     <img src={walletIcon} alt="icon" />

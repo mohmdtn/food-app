@@ -4,6 +4,7 @@ import { Home } from "./home/Home";
 import { Search } from "./search/Search";
 import { ProfileIndex } from "./profile/ProfileIndex";
 import { ProfileInfo } from "./profile/ProfileInfo";
+import { ProfileWallet } from "./profile/ProfileWallet";
 
 export {
     Welcome,
@@ -12,4 +13,5 @@ export {
     Search,
     ProfileIndex,
     ProfileInfo,
+    ProfileWallet,
 }

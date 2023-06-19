@@ -13,6 +13,7 @@ import { SearchItem } from "./SearchItem";
 import { SearchSkeleton } from './skeleton/SearchSkeleton';
 import { DrawerSearch } from "./DrawerSearch";
 import { CoffeFood } from "./CoffeFood";
+import { WalletItem } from "./WalletItem";
 
 export {
     NearestCoffe,
@@ -30,4 +31,5 @@ export {
     SearchSkeleton,
     DrawerSearch,
     CoffeFood,
+    WalletItem,
 };
