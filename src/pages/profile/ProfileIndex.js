@@ -98,7 +98,7 @@ export const ProfileIndex = () => {
               <div>
                 <img src={logoutIcon} alt="icon" />
               </div>
-              <p>خروج</p>
+              <p className="color-red">خروج</p>
             </Link>
           </div>
         </section>

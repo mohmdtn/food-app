@@ -209,6 +209,9 @@ html {
   font-size: 28px;
 }
 
+.color-red {
+  color: var(--red);
+}
 /*  */
 
 main {
