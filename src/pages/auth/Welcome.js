@@ -8,7 +8,7 @@ export const Welcome = () => {
     <main>
       <section className="auth-page">
         <section className="head">
-          <img className="pt-5" src={image} alt="image" />
+          <img className="pt-5" src={image} alt="" />
           <h4 className="fw-bold mb-0 pb-4">دورهمی ولی آسون!</h4>
         </section>
         <section className="pt-5">

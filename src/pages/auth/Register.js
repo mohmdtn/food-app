@@ -6,7 +6,7 @@ export const Register = () => {
     <main>
         <section className="auth-page">
             <section className="head number-img">
-                <img className="pt-5" src={image} alt="image" />
+                <img className="pt-5" src={image} alt="" />
             </section>
             <section className="pt-5 flex-grow-1 d-flex flex-column justify-content-between">
                 <section>

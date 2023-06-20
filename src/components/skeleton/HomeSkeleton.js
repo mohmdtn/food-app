@@ -1,5 +1,4 @@
 import listIcon from '../../pictures/icons/listIcon.svg';
-import mapIcon from '../../pictures/icons/mapIcon.svg';
 import userIcon from '../../pictures/icons/userIcon.svg';
 
 import { Skeleton } from "@mui/material";
