@@ -14,6 +14,9 @@ import { SearchSkeleton } from './skeleton/SearchSkeleton';
 import { DrawerSearch } from "./DrawerSearch";
 import { CoffeFood } from "./CoffeFood";
 import { WalletItem } from "./WalletItem";
+import { OrderProfileItem } from "./OrderProfileItem";
+import { Drawer } from "./Drawer";
+import { OrderProfileInfo } from "./OrderProfileInfo";
 
 export {
     NearestCoffe,
@@ -32,4 +35,7 @@ export {
     DrawerSearch,
     CoffeFood,
     WalletItem,
+    OrderProfileItem,
+    Drawer,
+    OrderProfileInfo,
 };

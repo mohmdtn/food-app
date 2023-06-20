@@ -5,6 +5,7 @@ import { Search } from "./search/Search";
 import { ProfileIndex } from "./profile/ProfileIndex";
 import { ProfileInfo } from "./profile/ProfileInfo";
 import { ProfileWallet } from "./profile/ProfileWallet";
+import { ProfileOrders } from "./profile/ProfileOrders";
 
 export {
     Welcome,
@@ -14,4 +15,5 @@ export {
     ProfileIndex,
     ProfileInfo,
     ProfileWallet,
+    ProfileOrders,
 }
