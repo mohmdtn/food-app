@@ -10,32 +10,38 @@ import { HomeSkeleton } from "./skeleton/HomeSkeleton";
 import { DrawerHome } from "./DrawerHome";
 import { FilterButtonSlider } from "./FilterButtonSlider";
 import { SearchItem } from "./SearchItem";
-import { SearchSkeleton } from './skeleton/SearchSkeleton';
+import { SearchSkeleton } from "./skeleton/SearchSkeleton";
 import { Coffe } from "./Coffe";
 import { CoffeFood } from "./CoffeFood";
 import { WalletItem } from "./WalletItem";
 import { OrderProfileItem } from "./OrderProfileItem";
 import { Drawer } from "./Drawer";
 import { OrderProfileInfo } from "./OrderProfileInfo";
+import { FaqItem } from "./FaqItem";
+import { PolicyAndprivacy } from "./PolicyAndprivacy";
+import { AboutUs } from "./AboutUs";
 
 export {
-    NearestCoffe,
-    Economical,
-    Denj,
-    Offer,
-    NearestCoffeSlider,
-    EconomicalSlider,
-    DenjSlider,
-    OfferSlider,
-    HomeSkeleton,
-    DrawerHome,
-    FilterButtonSlider,
-    SearchItem,
-    SearchSkeleton,
-    Coffe,
-    CoffeFood,
-    WalletItem,
-    OrderProfileItem,
-    Drawer,
-    OrderProfileInfo,
+  NearestCoffe,
+  Economical,
+  Denj,
+  Offer,
+  NearestCoffeSlider,
+  EconomicalSlider,
+  DenjSlider,
+  OfferSlider,
+  HomeSkeleton,
+  DrawerHome,
+  FilterButtonSlider,
+  SearchItem,
+  SearchSkeleton,
+  Coffe,
+  CoffeFood,
+  WalletItem,
+  OrderProfileItem,
+  Drawer,
+  OrderProfileInfo,
+  FaqItem,
+  PolicyAndprivacy,
+  AboutUs,
 };

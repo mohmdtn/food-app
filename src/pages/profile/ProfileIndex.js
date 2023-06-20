@@ -83,7 +83,7 @@ export const ProfileIndex = () => {
           </div>
 
           <div className="item">
-            <Link to="/">
+            <Link to="/profile/contact-us">
               <div>
                 <Badge badgeContent={2} color="secondary" sx={{ "& .MuiBadge-badge": { backgroundColor: "#f54749" } }} anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
                   <img src={messagesIcon} alt="icon" />
