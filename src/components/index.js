@@ -11,7 +11,7 @@ import { DrawerHome } from "./DrawerHome";
 import { FilterButtonSlider } from "./FilterButtonSlider";
 import { SearchItem } from "./SearchItem";
 import { SearchSkeleton } from './skeleton/SearchSkeleton';
-import { DrawerSearch } from "./DrawerSearch";
+import { Coffe } from "./Coffe";
 import { CoffeFood } from "./CoffeFood";
 import { WalletItem } from "./WalletItem";
 import { OrderProfileItem } from "./OrderProfileItem";
@@ -32,7 +32,7 @@ export {
     FilterButtonSlider,
     SearchItem,
     SearchSkeleton,
-    DrawerSearch,
+    Coffe,
     CoffeFood,
     WalletItem,
     OrderProfileItem,

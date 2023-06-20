@@ -8,7 +8,7 @@ import scanIcon from "../../pictures/icons/scanIcon.svg"
 import { HiArrowLeft } from "react-icons/hi";
 
 import React from "react";
-import { FilterButtonSlider, SearchItem, SearchSkeleton, DrawerSearch } from "../../components";
+import { FilterButtonSlider, SearchItem, SearchSkeleton, Drawer, Coffe } from "../../components";
 import { MoreContext } from "../../contexts/more_context";
 
 export const Search = () => {
@@ -51,7 +51,7 @@ export const Search = () => {
 
         </section>
         {/* drawer */}
-        <DrawerSearch />
+        <Drawer><Coffe /></Drawer>
         {/* drawer */}
       </main>
     );
