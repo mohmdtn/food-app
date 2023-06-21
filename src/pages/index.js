@@ -7,6 +7,7 @@ import { ProfileInfo } from "./profile/ProfileInfo";
 import { ProfileWallet } from "./profile/ProfileWallet";
 import { ProfileOrders } from "./profile/ProfileOrders";
 import { ContactUs } from "./profile/ContactUs";
+import { ProfileExit } from "./profile/ProfileExit";
 
 export {
     Welcome,
@@ -18,4 +19,5 @@ export {
     ProfileWallet,
     ProfileOrders,
     ContactUs,
+    ProfileExit,
 }

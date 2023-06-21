@@ -8,6 +8,10 @@ const initialState = {
     item: "",
   },
   faq_item : "",
+  logout: {
+    original: "exit",
+    sub: ""
+  },
   contact_us: "faq",
   home_fiter: ["all", "coffe"],
 };
@@ -29,8 +33,12 @@ export const MoreProvider = ({ children }) => {
     dispatch({ type: "SHOW_CONTACT_US", payload: item });
   };
 
+  const showLogout = (original, sub) => {
+    dispatch({ type: "SHOW_LOGOUT", payload: { original, sub } });
+  };
+
   return (
-    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs }}>
+    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout }}>
       {children}
     </MoreContext.Provider>
   );

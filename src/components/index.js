@@ -21,6 +21,9 @@ import { FaqItem } from "./FaqItem";
 import { PolicyAndprivacy } from "./PolicyAndprivacy";
 import { AboutUs } from "./AboutUs";
 import { Faq } from "./Faq";
+import { Logout } from "./Logout";
+import { DeleteAccount } from "./DeleteAccount";
+import { ChangeNumber } from "./ChangeNumber";
 
 export {
   NearestCoffe,
@@ -46,4 +49,7 @@ export {
   PolicyAndprivacy,
   AboutUs,
   Faq,
+  Logout,
+  DeleteAccount,
+  ChangeNumber,
 };

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Welcome, Register, Home, Search, ProfileIndex, ProfileInfo, ProfileWallet, ProfileOrders, ContactUs } from "./pages";
+import { Welcome, Register, Home, Search, ProfileIndex, ProfileInfo, ProfileWallet, ProfileOrders, ContactUs, ProfileExit } from "./pages";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route path="wallet" element={<ProfileWallet />} />
           <Route path="orders" element={<ProfileOrders />} />
           <Route path="contact-us" element={<ContactUs />} />
+          <Route path="logout" element={<ProfileExit />} />
         </Route>
 
       </Routes>

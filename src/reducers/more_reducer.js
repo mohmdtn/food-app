@@ -12,6 +12,9 @@ const more_reducer = (state, action) => {
     return { ...state, contact_us: action.payload };
   }
   
+  if (action.type === "SHOW_LOGOUT") {
+    return { ...state, logout: {...state.logout, original: action.payload.original, sub: action.payload.sub} };
+  }
 
   throw new Error(`No Matching "${action.type}" - action type`);
 };

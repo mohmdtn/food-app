@@ -94,7 +94,7 @@ export const ProfileIndex = () => {
           </div>
 
           <div className="item">
-            <Link to="/">
+            <Link to="/profile/logout">
               <div>
                 <img src={logoutIcon} alt="icon" />
               </div>

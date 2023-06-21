@@ -120,6 +120,7 @@ html {
   background-color: var(--gold);
   color: var(--dark2);
   font-weight: bold;
+  transition: .3s;
 }
 
 .button-gold svg{
@@ -1441,6 +1442,65 @@ main {
   line-height: var(--line-22);
   margin-bottom: 8px;
   font-weight: bold;
+}
+
+/* logout account */
+.logout {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logout h5 {
+  font-size: var(--font-16);
+  font-family: "EstedadBold";
+  margin-bottom: 17px;
+}
+
+.logout p {
+  font-size: var(--font-12);
+}
+
+.logout button {
+  all: unset;
+}
+
+.logout button {
+  border: 1px solid var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  min-width: 100px;
+  width: 167px;
+  border-radius: var(--radius-14);
+  margin: 5px;
+  cursor: pointer;
+}
+
+.logout .button1{
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.logout .button2{
+  color: var(--red);
+}
+
+.logout input.delete{
+  text-align: center;
+}
+.logout input.delete::placeholder{
+  letter-spacing: 14px;
+  color: var(--smoky2);
+}
+
+.logout input.number{
+  text-align: left;
+}
+.logout input.number::placeholder{
+  letter-spacing: 8px;
+  color: var(--smoky2);
 }
 
 /* end of profile page */
