@@ -20,6 +20,7 @@ import { OrderProfileInfo } from "./OrderProfileInfo";
 import { FaqItem } from "./FaqItem";
 import { PolicyAndprivacy } from "./PolicyAndprivacy";
 import { AboutUs } from "./AboutUs";
+import { Faq } from "./Faq";
 
 export {
   NearestCoffe,
@@ -44,4 +45,5 @@ export {
   FaqItem,
   PolicyAndprivacy,
   AboutUs,
+  Faq,
 };
