@@ -12,7 +12,10 @@ const initialState = {
     original: "exit",
     sub: ""
   },
-  contact_us: "faq",
+  contact_us: {
+    original: "faq",
+    sub: "faq",
+  },
   home_fiter: ["all", "coffe"],
 };
 
@@ -29,8 +32,8 @@ export const MoreProvider = ({ children }) => {
     dispatch({ type: "FAQ_ITEM", payload: id });
   };
 
-  const showContactUs = (item) => {
-    dispatch({ type: "SHOW_CONTACT_US", payload: item });
+  const showContactUs = (original, sub) => {
+    dispatch({ type: "SHOW_CONTACT_US", payload: { original, sub } });
   };
 
   const showLogout = (original, sub) => {

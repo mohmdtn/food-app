@@ -1399,6 +1399,21 @@ main {
   margin: 0;
 }
 
+.faq .old-tickets {
+
+}
+
+.faq .old-tickets button:nth-child(1) {
+  width: 230px;
+  margin: 0;
+}
+.faq .old-tickets button:nth-child(2) {
+  width: 110px;
+  margin: 0;
+  background-color: var(--red);
+  color: var(--white);
+}
+
 /* privacy and policy */
 .policy{
   text-align: center;

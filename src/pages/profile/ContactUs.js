@@ -20,28 +20,28 @@ export const ContactUs = () => {
           </div>
           {/* buttons */}
           <section>
-            <button className={`button-gold mb-3 ${ contact_us === "faq" && "button-gold-active" }`} onClick={() => showContactUs("faq")}> سوالات و پیشنهادات</button>
-            <button className={`button-gold mb-3 ${ contact_us === "policy" && "button-gold-active" }`} onClick={() => showContactUs("policy")}>قوانین و شرایط</button>
-            <button className={`button-gold ${ contact_us === "aboutus" && "button-gold-active" }`} onClick={() => showContactUs("aboutus")}>درباره ی دنجنشین</button>
+            <button className={`button-gold mb-3 ${ contact_us.original === "faq" && "button-gold-active" }`} onClick={() => showContactUs("faq", "faq")}> سوالات و پیشنهادات</button>
+            <button className={`button-gold mb-3 ${ contact_us.original === "policy" && "button-gold-active" }`} onClick={() => showContactUs("policy", "")}>قوانین و شرایط</button>
+            <button className={`button-gold ${ contact_us.original === "aboutus" && "button-gold-active" }`} onClick={() => showContactUs("aboutus", "")}>درباره ی دنجنشین</button>
           </section>
           {/* buttons */}
         </section>
 
         <section className="content d-flex flex-grow-1">
           {/* faq section */}
-          <section className={`w-100 ${contact_us === "faq" ? "d-flex" : "d-none" }`}>
+          <section className={`w-100 ${contact_us.original === "faq" ? "d-flex" : "d-none" }`}>
             <Faq />
           </section>
           {/* faq section */}
 
           {/* policy and privecy section */}
-          <section className={`w-100  ${contact_us === "policy" ? "d-flex" : "d-none" }`}>
+          <section className={`w-100  ${contact_us.original === "policy" ? "d-flex" : "d-none" }`}>
             <PolicyAndprivacy />
           </section>
           {/* policy and privecy section */}
 
           {/* about us section */}
-          <section className={`w-100  ${contact_us === "aboutus" ? "d-flex" : "d-none" }`}>
+          <section className={`w-100  ${contact_us.original === "aboutus" ? "d-flex" : "d-none" }`}>
             <AboutUs />
           </section>
           {/* about us section */}

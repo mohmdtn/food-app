@@ -9,7 +9,7 @@ const more_reducer = (state, action) => {
   }
 
   if (action.type === "SHOW_CONTACT_US") {
-    return { ...state, contact_us: action.payload };
+    return { ...state, contact_us: {...state.contact_us, original: action.payload.original, sub: action.payload.sub} };
   }
   
   if (action.type === "SHOW_LOGOUT") {

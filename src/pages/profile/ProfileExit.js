@@ -6,6 +6,10 @@ import { MoreContext } from "../../contexts/more_context";
 
 export const ProfileExit = () => {
   const { logout, showLogout } = React.useContext(MoreContext);
+  React.useEffect(() => {
+    showLogout("exit", "");
+    // eslint-disable-next-line
+  }, [])
 
   return (
     <main>
