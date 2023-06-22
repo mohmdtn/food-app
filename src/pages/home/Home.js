@@ -1,13 +1,13 @@
-import listIcon from '../../pictures/icons/listIcon.svg';
-import mapIcon from '../../pictures/icons/mapIcon.svg';
-import userIcon from '../../pictures/icons/userIcon.svg';
-
-
 import React from "react";
 import { NearestCoffeSlider, EconomicalSlider, DenjSlider, OfferSlider, HomeSkeleton, DrawerHome, FilterButtonSlider } from "../../components";
 import { MoreContext } from "../../contexts/more_context";
 
+import listIcon from '../../pictures/icons/listIcon.svg';
+import mapIcon from '../../pictures/icons/mapIcon.svg';
+import userIcon from '../../pictures/icons/userIcon.svg';
+
 import Badge from '@mui/material/Badge';
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const { loading } = React.useContext(MoreContext);
@@ -33,9 +33,11 @@ export const Home = () => {
               <img src={mapIcon} alt="" />
             </div>
             <div>
-              <Badge badgeContent={3} color="secondary" sx={{ "& .MuiBadge-badge": { backgroundColor: '#f54749' } }}>
-                <img src={userIcon} alt="" />
-              </Badge>
+              <Link to="/profile">
+                <Badge badgeContent={3} color="secondary" sx={{ "& .MuiBadge-badge": { backgroundColor: '#f54749' } }}>
+                  <img src={userIcon} alt="" />
+                </Badge>
+              </Link>
             </div>
           </section>
 

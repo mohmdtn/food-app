@@ -7,7 +7,7 @@ export const Economical = ({name, image, logo, price, oldPrice, coffe, rate}) =>
         {logo && <img src={logo} alt="" />}
         {coffe}
       </section>
-      <section className="food">
+      <section className="food-preview">
         <section className="px-3">
           <h5>{name}</h5>
           <div className="d-flex justify-content-between">

@@ -464,7 +464,7 @@ main {
   width: 30px;
 }
 
-.home .economical .food {
+.home .economical .food-preview {
   border-radius: var(--radius-16);
   box-shadow: 0px 2px 28px #4b4b581a;
   display: flex;
@@ -475,24 +475,24 @@ main {
   width: 280px;
 }
 
-.home .economical .food h5 {
+.home .economical .food-preview h5 {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: var(--font-12);
 }
 
-.home .economical .food .price {
+.home .economical .food-preview .price {
   color: var(--orange);
   margin-bottom: 0;
 }
 
-.home .economical .food .old-price {
+.home .economical .food-preview .old-price {
   margin-bottom: 0;
   color: var(--smoky);
   text-decoration: line-through;
 }
 
-.home .economical .food .food-image {
+.home .economical .food-preview .food-image {
   height: 60px;
   width: 103px;
   /* background-image: url("../src/pictures/test/food1.png"); */
@@ -502,7 +502,7 @@ main {
   align-items: center;
 }
 
-.home .economical .food .food-image .rate {
+.home .economical .food-preview .food-image .rate {
   width: 40px;
   height: 18px;
   border-radius: 4px;
@@ -1397,10 +1397,6 @@ main {
 .faq .new-ticket button:nth-child(2) {
   width: 110px;
   margin: 0;
-}
-
-.faq .old-tickets {
-
 }
 
 .faq .old-tickets button:nth-child(1) {

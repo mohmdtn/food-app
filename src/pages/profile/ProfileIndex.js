@@ -18,7 +18,7 @@ export const ProfileIndex = () => {
     <main>
       <section className="profile px-3">
         <section className="head">
-          <Link to=''>
+          <Link to='/home'>
             <div className="back">
                 <HiArrowLeft />
             </div>
