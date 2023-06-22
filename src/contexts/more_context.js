@@ -16,7 +16,7 @@ const initialState = {
     original: "faq",
     sub: "faq",
   },
-  home_fiter: ["all", "coffe"],
+  order_info: ""
 };
 
 export const MoreContext = React.createContext();
@@ -40,8 +40,12 @@ export const MoreProvider = ({ children }) => {
     dispatch({ type: "SHOW_LOGOUT", payload: { original, sub } });
   };
 
+  const showOrderInfo = (item) => {
+    dispatch({ type: "SHOW_ORDER_INFO", payload: item });
+  };
+
   return (
-    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout }}>
+    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo }}>
       {children}
     </MoreContext.Provider>
   );

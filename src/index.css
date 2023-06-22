@@ -1303,12 +1303,13 @@ main {
  border-top: 1px solid var(--smoky5);
 }
 
-.profile .order-info .page-content .item {
+.profile .order-info .page-content .item section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--smoky5);
   padding: 10px;
+  cursor: pointer;
 }
 
 .profile .order-info .page-content .item h5 {
@@ -1330,6 +1331,32 @@ main {
 }
 .profile .order-info .page-content .item h6 span {
   font-size: var(--font-8);
+}
+
+.profile .order-info .page-content .item .sub-item{
+  border-top: 3px solid var(--white);
+  flex-direction: column;
+  display: none;
+}
+
+.profile .order-info .page-content .item .sub-item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.profile .order-info .page-content .item .sub-item h5{
+  font-size: var(--font-12);
+}
+
+.profile .order-info .page-content .active{
+  background-color: var(--smoky5);
+}
+
+.profile .order-info .page-content .active .sub-item {
+  display: flex;
 }
 
 /* faq */
