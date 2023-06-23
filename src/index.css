@@ -1324,15 +1324,15 @@ main {
   margin-bottom: 0
 }
 
-.order-food-info .item h6 {
+.order-food-info .item h6, .order .content .me .sub-item h6 {
   font-size: var(--font-12);
   font-weight: bold;
   margin-bottom: 0;
 }
-.order-food-info .item h6 span {
+.order-food-info .item h6 span, .order .content .me .sub-item h6 span {
   font-size: var(--font-8);
 }
-.order-food-info .item h6 svg {
+.order-food-info .item h6 svg, .order .content .me .sub-item h6 svg {
   color: var(--green);
   margin-right: 6px;
   font-size: 12px;
@@ -1599,6 +1599,7 @@ main {
 .order .content .buttons{
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid var(--smoky5);
 }
 
 .order .content .buttons button{
@@ -1620,10 +1621,6 @@ main {
 
 .order .content .add-button {
   width: 44px;
-}
-
-.order .content .order-food-wrapper {
-  border-top: 1px solid var(--smoky5);
 }
 
 .order .content .cost .tax {
@@ -1671,5 +1668,40 @@ main {
   display: block;
   line-height: 10px;
 }
+
+.order .content .flex-cstm {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order .content .me .sub-item{
+  border-top: 3px solid var(--white);
+  flex-direction: column;
+  display: flex;
+}
+
+.order .content .me .sub-item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.order .content .me .sub-item h5{
+  font-size: var(--font-12);
+}
+
+.order .content .reserve-text {
+  font-size: var(--font-12);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.order .content .reserve-text .fw-bold {
+  border-bottom: 2px solid var(--dark2);
+}
+
 
 /* end of order page */

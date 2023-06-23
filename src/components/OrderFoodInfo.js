@@ -21,7 +21,7 @@ export const OrderFoodInfo = ({id, name, number, paid, cost, foods}) => {
 
         {/* foods */}
         <section className="sub-item">
-          {foods.map((food) => {
+          {foods && foods.map((food) => {
             return (
               <div key={food.id}>
                 <h5>{food.name}</h5>

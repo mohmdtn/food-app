@@ -26,6 +26,9 @@ import { DeleteAccount } from "./DeleteAccount";
 import { ChangeNumber } from "./ChangeNumber";
 import { OrderFoodInfo } from "./OrderFoodInfo";
 import { OrderAmount } from "./OrderAmount";
+import { OrderTakeAway } from "./OrderTakeAway";
+import { OrderReserve } from "./OrderReserve";
+import { OrderInPlace } from "./OrderInPlace";
 
 export {
   NearestCoffe,
@@ -56,4 +59,7 @@ export {
   ChangeNumber,
   OrderFoodInfo,
   OrderAmount,
+  OrderTakeAway,
+  OrderReserve,
+  OrderInPlace,
 };
