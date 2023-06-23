@@ -1705,7 +1705,7 @@ main {
 
 
 /* modals */
-.invate-alert {
+.invate-alert, .exit-modal {
   text-align: center;
   border-radius: var(--radius-18);
   background-color: var(--white);
@@ -1713,18 +1713,36 @@ main {
   width: 380px;
 }
 
-.invate-alert h6 {
+.invate-alert h6, .exit-modal h6 {
   font-size: var(--font-14);
   font-weight: bold;
   margin-bottom: 5px;
   color: var(--dark2);
 }
 
-.invate-alert p {
+.invate-alert p, .exit-modal p {
   font-size: var(--font-8);
   color: var(--smoky4);
   max-width: 180px;
   line-height: 18px;
   margin: 0 auto;
 }
+
+.button-3 {
+  all: unset;
+  height: 44px;
+  border-radius: var(--radius-14);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.button-red {
+  background-color: var(--red);
+}
+.button-green {
+  background-color: var(--green);
+}
+
 /* end of order page */

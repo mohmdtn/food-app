@@ -22,6 +22,7 @@ const initialState = {
     sub: "all"
   },
   invate_modal: false,
+  exit_modal: false,
 };
 
 export const MoreContext = React.createContext();
@@ -57,8 +58,12 @@ export const MoreProvider = ({ children }) => {
     dispatch({ type: "INVATE_MODAL", payload: state });
   }
 
+  const exitModal = (state) => {
+    dispatch({ type: "EXIT_MODAL", payload: state });
+  }
+
   return (
-    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, invateModal }}>
+    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, invateModal, exitModal }}>
       {children}
     </MoreContext.Provider>
   );

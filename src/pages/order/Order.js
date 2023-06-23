@@ -2,10 +2,10 @@ import React from "react";
 import listWhiteIcon from "../../pictures/icons/listWhiteIcon.svg";
 import leaveIcon from "../../pictures/icons/leaveicon.svg";
 import { MoreContext } from "../../contexts/more_context";
-import { OrderTakeAway, OrderReserve, OrderInPlace, InvateModal } from "../../components";
+import { OrderTakeAway, OrderReserve, OrderInPlace, InvateModal, OrderExitModal } from "../../components";
 
 export const Order = () => {
-  const {showOrderPage, order_page} = React.useContext(MoreContext);
+  const {showOrderPage, order_page, exitModal} = React.useContext(MoreContext);
 
   return (
     <main>
@@ -15,7 +15,7 @@ export const Order = () => {
           <section className="pb-5 px-2 d-flex justify-content-between align-items-center text-center">
             <div><img src={listWhiteIcon} alt="" /></div>
             <h5>تکمیل سفارش</h5>
-            <div><img src={leaveIcon} alt="" /></div>
+            <div onClick={() => exitModal(true)}><img src={leaveIcon} alt="" /></div>
           </section>
           {/* page title */}
 
@@ -32,9 +32,10 @@ export const Order = () => {
           <OrderTakeAway />
           <OrderReserve />
           <OrderInPlace />
-          
+
           {/* modals */}
           <InvateModal />
+          <OrderExitModal />
           {/* modals */}
         </section>
       </section>
