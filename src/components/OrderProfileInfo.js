@@ -1,10 +1,26 @@
 import React from "react";
 import coinsIcon from "../pictures/icons/coinsIcon.svg";
 import usersIcon from "../pictures/icons/usersIcon.svg";
-import { MoreContext } from "../contexts/more_context";
+import { OrderFoodInfo } from "./OrderFoodInfo";
 
 export const OrderProfileInfo = () => {
-  const {order_info, showOrderInfo} = React.useContext(MoreContext);
+  const foods = [
+    {
+      "id": 1,
+      "name": "زرشک پلو با مرغ",
+      "price": "140,000"
+    },
+    {
+      "id": 2,
+      "name": "نوشابه کوکا",
+      "price": "14,000"
+    },
+    {
+      "id": 3,
+      "name": "ماست موسیر",
+      "price": "22,000"
+    }
+  ];
 
   return (
     <section className="order-info">
@@ -20,82 +36,11 @@ export const OrderProfileInfo = () => {
           <p>تومان</p>
         </div>
       </section>
-      <section className="page-content">
-
-        <div className={`item ${order_info === 1 && "active"}`} onClick={() => showOrderInfo(1)}>
-          <section>
-            <div>
-              <h5>محمد تقی نسب</h5>
-              <p>09116916763</p>
-            </div>
-            <h6>225000 <span>تومان</span></h6>
-          </section>
-          <section className="sub-item">
-            <div>
-              <h5>زرشک پلو با مرغ</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-            <div>
-              <h5>نوشابه</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-            <div>
-              <h5>ماست</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-          </section>
-        </div>
-
-
-        <div className={`item ${order_info === 2 && "active"}`} onClick={() => showOrderInfo(2)}>
-          <section>
-            <div>
-              <h5>محمد تقی نسب</h5>
-              <p>09116916763</p>
-            </div>
-            <h6>225000 <span>تومان</span></h6>
-          </section>
-          <section className="sub-item">
-            <div>
-              <h5>زرشک پلو با مرغ</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-            <div>
-              <h5>نوشابه</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-            <div>
-              <h5>ماست</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-          </section>
-        </div>
-
-        
-        <div className={`item ${order_info === 3 && "active"}`} onClick={() => showOrderInfo(3)}>
-          <section>
-            <div>
-              <h5>محمد تقی نسب</h5>
-              <p>09116916763</p>
-            </div>
-            <h6>225000 <span>تومان</span></h6>
-          </section>
-          <section className="sub-item">
-            <div>
-              <h5>زرشک پلو با مرغ</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-            <div>
-              <h5>نوشابه</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-            <div>
-              <h5>ماست</h5>
-              <h6>225000 <span>تومان</span></h6>
-            </div>
-          </section>
-        </div>
-        
+      <section className="page-content order-food-info">
+        <OrderFoodInfo id={1} name={"محمد تقی نسب"} number={"09116916763"} paid={true} cost={"225000"} foods={foods} />
+        <OrderFoodInfo id={2} number={"09116916763"} cost={"455000"} foods={foods} />
+        <OrderFoodInfo id={3} number={"09116912345"} cost={"455000"} foods={foods} />
+        <OrderFoodInfo id={4} name={"آرشام جعفریان"} number={"09111111211"} paid={true} cost={"125000"} foods={foods} />
       </section>
     </section>
   );

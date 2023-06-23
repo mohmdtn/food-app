@@ -8,16 +8,18 @@ import { ProfileWallet } from "./profile/ProfileWallet";
 import { ProfileOrders } from "./profile/ProfileOrders";
 import { ContactUs } from "./profile/ContactUs";
 import { ProfileExit } from "./profile/ProfileExit";
+import { Order } from "./order/Order";
 
 export {
-    Welcome,
-    Register,
-    Home,
-    Search,
-    ProfileIndex,
-    ProfileInfo,
-    ProfileWallet,
-    ProfileOrders,
-    ContactUs,
-    ProfileExit,
-}
+  Welcome,
+  Register,
+  Home,
+  Search,
+  ProfileIndex,
+  ProfileInfo,
+  ProfileWallet,
+  ProfileOrders,
+  ContactUs,
+  ProfileExit,
+  Order,
+};

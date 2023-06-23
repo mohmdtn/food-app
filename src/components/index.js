@@ -24,6 +24,7 @@ import { Faq } from "./Faq";
 import { Logout } from "./Logout";
 import { DeleteAccount } from "./DeleteAccount";
 import { ChangeNumber } from "./ChangeNumber";
+import { OrderFoodInfo } from "./OrderFoodInfo";
 
 export {
   NearestCoffe,
@@ -52,4 +53,5 @@ export {
   Logout,
   DeleteAccount,
   ChangeNumber,
+  OrderFoodInfo,
 };

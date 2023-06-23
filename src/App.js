@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Welcome, Register, Home, Search, ProfileIndex, ProfileInfo, ProfileWallet, ProfileOrders, ContactUs, ProfileExit } from "./pages";
+import { Welcome, Register, Home, Search, ProfileIndex, ProfileInfo, ProfileWallet, ProfileOrders, ContactUs, ProfileExit, Order } from "./pages";
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="logout" element={<ProfileExit />} />
         </Route>
+
+        <Route path="/order" element={<Order />} />
 
       </Routes>
     </BrowserRouter>

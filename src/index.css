@@ -1303,7 +1303,7 @@ main {
  border-top: 1px solid var(--smoky5);
 }
 
-.profile .order-info .page-content .item section {
+.order-food-info .item section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1312,34 +1312,39 @@ main {
   cursor: pointer;
 }
 
-.profile .order-info .page-content .item h5 {
+.order-food-info .item h5 {
   margin-bottom: 0;
   font-size: var(--font-14);
   font-weight: bold;
 }
 
-.profile .order-info .page-content .item p {
+.order-food-info .item p {
   font-size: var(--font-12);
   color: var(--smoky3);
   margin-bottom: 0
 }
 
-.profile .order-info .page-content .item h6 {
+.order-food-info .item h6 {
   font-size: var(--font-12);
   font-weight: bold;
   margin-bottom: 0;
 }
-.profile .order-info .page-content .item h6 span {
+.order-food-info .item h6 span {
   font-size: var(--font-8);
 }
+.order-food-info .item h6 svg {
+  color: var(--green);
+  margin-right: 6px;
+  font-size: 12px;
+}
 
-.profile .order-info .page-content .item .sub-item{
+.order-food-info .item .sub-item{
   border-top: 3px solid var(--white);
   flex-direction: column;
   display: none;
 }
 
-.profile .order-info .page-content .item .sub-item div {
+.order-food-info .item .sub-item div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1347,15 +1352,15 @@ main {
   width: 100%;
 }
 
-.profile .order-info .page-content .item .sub-item h5{
+.order-food-info .item .sub-item h5{
   font-size: var(--font-12);
 }
 
-.profile .order-info .page-content .active{
+.order-food-info .active{
   background-color: var(--smoky5);
 }
 
-.profile .order-info .page-content .active .sub-item {
+.order-food-info .active .sub-item {
   display: flex;
 }
 
@@ -1542,3 +1547,128 @@ main {
 }
 
 /* end of profile page */
+
+
+/* order page */
+
+.order {
+  background-color: var(--dark2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.order .header h5 {
+  color: var(--white);
+  margin-bottom: 0;
+  font-size: var(--font-16);
+  color: var(--white);
+}
+
+.order .header button {
+  all: unset;
+  height: 44px;
+  width: 104px;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark2);
+  font-size: var(--font-12);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.order .header button.active {
+  background-color: var(--gold);
+  color: var(--dark2);
+}
+
+.order .content {
+  border-radius: 40px 40px 0 0;
+  background-color: var(--white);
+  overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order .content .buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.order .content .buttons button{
+  all: unset;
+  height: 44px;
+  min-width: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-12);
+  border-radius: var(--radius-36);
+  cursor: pointer;
+  transition: .3s;
+}
+.order .content .buttons button.active {
+  background-color: var(--dark2);
+  color: var(--gold);
+}
+
+.order .content .add-button {
+  width: 44px;
+}
+
+.order .content .order-food-wrapper {
+  border-top: 1px solid var(--smoky5);
+}
+
+.order .content .cost .tax {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order .content .cost .tax h6 {
+  margin-bottom: 0;
+  font-size: var(--font-16);
+}
+
+.order .content .cost .tax p {
+  margin-bottom: 0;
+  font-size: var(--font-14);
+}
+.order .content .cost .tax p span {
+  font-size: var(--font-8);
+}
+
+.order .content .cost .amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order .content .cost .amount button {
+  width: 164px;
+  margin: 0;
+}
+
+.order .content .cost .amount h5 {
+  font-size: var(--font-16);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.order .content .cost .amount p {
+  font-size: var(--font-16);
+  margin-bottom: 0;
+}
+.order .content .cost .amount p span {
+  font-size: var(--font-8);
+  display: block;
+  line-height: 10px;
+}
+
+/* end of order page */
