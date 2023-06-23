@@ -11,7 +11,7 @@ import {
   } from '@persian-tools/persian-mobile-datepicker';
 
 export const OrderReserve = () => {
-  const { showOrderPage, order_page } = React.useContext(MoreContext);
+  const { showOrderPage, order_page, invateModal } = React.useContext(MoreContext);
   const config =  {
     year: {
       caption: {
@@ -40,21 +40,19 @@ export const OrderReserve = () => {
     }
   };
 
+  // mobile modern data picker
   const [showPicker, setShowPicker] = React.useState(false);
   const [selectedDateValue, setSelectedDateValue] = React.useState();
   // eslint-disable-next-line
   const [selectedDateEvents, setSelectedDateEvents] = React.useState([]);
-
   function handleSubmit(selectedDate) {
     console.log(selectedDate);
     const date = `${selectedDate.object.hour + ":" + selectedDate.object.minute + " " + format(selectedDate.date, "d MMMM yyyy")}`;
-    
     const events = selectedDate.events;
-
     setSelectedDateValue(date);
     setSelectedDateEvents(events);
   }
-  
+  // mobile modern data picker
 
   return (
     <section className={`flex-grow-1 flex-column ${order_page.page === "reserve" ? "d-flex" : "d-none"}`}>
@@ -92,19 +90,19 @@ export const OrderReserve = () => {
         </section>
 
         {/* invate friends */}
-        <section className={`justify-content-between flex-column flex-grow-1 me ${order_page.sub === "invate" ? "d-flex" : "d-none"}`}>
-        <section className="order-food-wrapper mb-4">
-          <OrderFoodInfo id={1} name={"محمد تقی نسب"} number={"09116916763"} />
-          <OrderFoodInfo id={4} name={"آرشام جعفریان"} number={"09111111211"} />
-        </section>
-          <button className="button button-md add-button">
+        <section className={`justify-content-between flex-column flex-grow-1 ${order_page.sub === "invate" ? "d-flex" : "d-none"}`}>
+          <section className="order-food-wrapper mb-4">
+            <OrderFoodInfo id={1} name={"محمد تقی نسب"} number={"09116916763"} />
+            <OrderFoodInfo id={4} name={"آرشام جعفریان"} number={"09111111211"} />
+          </section>
+          <button className="button button-md add-button" onClick={() => invateModal(true)}>
             <img src={userAddIcon} alt="" />
           </button>
         </section>
 
         {/* amount */}
         <section>
-          <p className="reserve-text px-4">مبلغ 350،000 ریال به عنوان بیعانه از شما گرفته میشود که در صورت <span className="color-green">تکمیل</span> سفارش از قیمت نهایی کسر شده و در صورت <span className="color-red">لغو</span> <span className="fw-bold">هیچ مبلغی</span> باز گردانده نمیشود.</p>
+          <p className="reserve-text px-4 mt-3">مبلغ 350،000 ریال به عنوان بیعانه از شما گرفته میشود که در صورت <span className="color-green">تکمیل</span> سفارش از قیمت نهایی کسر شده و در صورت <span className="color-red">لغو</span> <span className="fw-bold">هیچ مبلغی</span> باز گردانده نمیشود.</p>
           <OrderAmount tax={"12,000"} amount={"1,500,000"} />
         </section>
         {/* amount */}

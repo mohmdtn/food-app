@@ -24,6 +24,10 @@ const more_reducer = (state, action) => {
     return { ...state, order_page: {...state.order_page, page: action.payload.page, sub: action.payload.sub} };
   }
 
+  if (action.type === "INVATE_MODAL") {
+    return { ...state, invate_modal: action.payload };
+  }
+
   throw new Error(`No Matching "${action.type}" - action type`);
 };
 

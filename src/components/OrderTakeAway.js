@@ -4,7 +4,7 @@ import { MoreContext } from "../contexts/more_context";
 import userAddIcon from "../pictures/icons/profileAddIcon.svg";
 
 export const OrderTakeAway = () => {
-  const { showOrderPage, order_page } = React.useContext(MoreContext);
+  const { showOrderPage, order_page, invateModal } = React.useContext(MoreContext);
   const foods = [
     {
       id: 1,
@@ -38,12 +38,12 @@ export const OrderTakeAway = () => {
         <section className="order-food-wrapper mb-4">
           <OrderFoodInfo id={1} name={"محمد تقی نسب"} number={"09116916763"} paid={true} cost={"225000"} foods={foods} />
           <OrderFoodInfo id={2} number={"0308208973"} cost={"455000"} foods={foods} />
-          <OrderFoodInfo id={3} number={"09116912345"} cost={"55000"} foods={foods} />
+          <OrderFoodInfo id={3} number={"09116912345"} cost={"55000"} paid foods={foods} />
           <OrderFoodInfo id={4} name={"آرشام جعفریان"} number={"09111111211"} paid={true} cost={"125000"} foods={foods} />
         </section>
         {/* foods info */}
 
-        <button className="button button-md add-button">
+        <button className="button button-md add-button" onClick={() => invateModal(true)}>
           <img src={userAddIcon} alt="" />
         </button>
 

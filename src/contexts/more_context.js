@@ -20,7 +20,8 @@ const initialState = {
   order_page: {
     page: "takeAway",
     sub: "all"
-  }
+  },
+  invate_modal: false,
 };
 
 export const MoreContext = React.createContext();
@@ -52,8 +53,12 @@ export const MoreProvider = ({ children }) => {
     dispatch({ type: "SHOW_ORDER_PAGE", payload: { page, sub } });
   };
 
+  const invateModal = (state) => {
+    dispatch({ type: "INVATE_MODAL", payload: state });
+  }
+
   return (
-    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage }}>
+    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, invateModal }}>
       {children}
     </MoreContext.Provider>
   );

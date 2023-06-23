@@ -29,6 +29,7 @@ import { OrderAmount } from "./OrderAmount";
 import { OrderTakeAway } from "./OrderTakeAway";
 import { OrderReserve } from "./OrderReserve";
 import { OrderInPlace } from "./OrderInPlace";
+import { InvateModal } from "./InvateModal";
 
 export {
   NearestCoffe,
@@ -62,4 +63,5 @@ export {
   OrderTakeAway,
   OrderReserve,
   OrderInPlace,
+  InvateModal,
 };

@@ -15,7 +15,7 @@ export const OrderFoodInfo = ({id, name, number, paid, cost, foods}) => {
             <h5>{name ? name : <img src={userOctagonicon} alt="" />}</h5>
             <p>{number}</p>
           </div>
-          <h6>{cost} <span>تومان</span><BsCheckCircle className={`${paid ? "visible" : "invisible"}`} /></h6>
+          <h6>{cost} {cost && <span>تومان</span>}<BsCheckCircle className={`${paid ? "visible" : "invisible"}`} /></h6>
         </section>
         {/* user info */}
 
