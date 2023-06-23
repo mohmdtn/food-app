@@ -16,7 +16,11 @@ const initialState = {
     original: "faq",
     sub: "faq",
   },
-  order_info: ""
+  order_info: "",
+  order_page: {
+    page: "takeAway",
+    sub: "all"
+  }
 };
 
 export const MoreContext = React.createContext();
@@ -44,8 +48,12 @@ export const MoreProvider = ({ children }) => {
     dispatch({ type: "SHOW_ORDER_INFO", payload: item });
   };
 
+  const showOrderPage = (page, sub) => {
+    dispatch({ type: "SHOW_ORDER_PAGE", payload: { page, sub } });
+  };
+
   return (
-    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo }}>
+    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage }}>
       {children}
     </MoreContext.Provider>
   );

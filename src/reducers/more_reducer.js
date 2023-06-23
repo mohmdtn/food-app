@@ -20,6 +20,10 @@ const more_reducer = (state, action) => {
     return { ...state, order_info: action.payload };
   }
 
+  if (action.type === "SHOW_ORDER_PAGE") {
+    return { ...state, order_page: {...state.order_page, page: action.payload.page, sub: action.payload.sub} };
+  }
+
   throw new Error(`No Matching "${action.type}" - action type`);
 };
 

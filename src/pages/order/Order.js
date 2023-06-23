@@ -2,9 +2,11 @@ import React from "react";
 import listWhiteIcon from "../../pictures/icons/listWhiteIcon.svg";
 import leaveIcon from "../../pictures/icons/leaveicon.svg";
 import userAddIcon from "../../pictures/icons/profileAddIcon.svg";
-import { OrderFoodInfo } from "../../components";
+import { OrderFoodInfo, OrderAmount } from "../../components";
+import { MoreContext } from "../../contexts/more_context";
 
 export const Order = () => {
+  const {showOrderPage, order_page} = React.useContext(MoreContext);
   const foods = [
     {
       id: 1,
@@ -37,9 +39,9 @@ export const Order = () => {
 
           {/* buttons */}
           <section className="d-flex justify-content-between">
-            <button className="active">بیرون بر</button>
-            <button className="">رزرو میز</button>
-            <button className="">میل در محل</button>
+            <button className={`${order_page.page === "takeAway" && "active"}`} onClick={() => showOrderPage("takeAway", "all")}>بیرون بر</button>
+            <button className={`${order_page.page === "reserve" && "active"}`} onClick={() => showOrderPage("reserve", "all")}>رزرو میز</button>
+            <button className={`${order_page.page === "inPlace" && "active"}`} onClick={() => showOrderPage("inPlace", "all")}>میل در محل</button>
           </section>
           {/* buttons */}
         </section>
@@ -64,23 +66,10 @@ export const Order = () => {
             <img src={userAddIcon} alt="" />
           </button>
 
-          {/* cost informations */}
-          <section className="cost px-4 pb-3">
-            <section className="tax mb-1">
-              <h6>مالیات:</h6>
-              <p>12,000 <span>تومان</span></p>
-            </section>
-            <section className="amount">
-              <h5>مجموع:</h5>
-              <p>
-                1,500,00
-                <span>تومان</span>
-              </p>
-              <button className="button">ادامه</button>
-            </section>
-          </section>
-          {/* cost informations */}
-          
+          {/* amount */}
+          <OrderAmount tax={"12,000"} amount={"1,500,000"} />
+          {/* amount */}
+
         </section>
       </section>
     </main>
