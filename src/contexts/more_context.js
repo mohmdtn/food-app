@@ -22,6 +22,7 @@ const initialState = {
     sub: "all"
   },
   invate_modal: false,
+  add_user_modal: false,
   exit_modal: false,
 };
 
@@ -54,8 +55,8 @@ export const MoreProvider = ({ children }) => {
     dispatch({ type: "SHOW_ORDER_PAGE", payload: { page, sub } });
   };
 
-  const invateModal = (state) => {
-    dispatch({ type: "INVATE_MODAL", payload: state });
+  const addUserModal = (state) => {
+    dispatch({ type: "ADD_USER_MODAL", payload: state });
   }
 
   const exitModal = (state) => {
@@ -63,7 +64,7 @@ export const MoreProvider = ({ children }) => {
   }
 
   return (
-    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, invateModal, exitModal }}>
+    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, addUserModal, exitModal }}>
       {children}
     </MoreContext.Provider>
   );

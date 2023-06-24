@@ -29,7 +29,7 @@ import { OrderAmount } from "./OrderAmount";
 import { OrderTakeAway } from "./OrderTakeAway";
 import { OrderReserve } from "./OrderReserve";
 import { OrderInPlace } from "./OrderInPlace";
-import { InvateModal } from "./InvateModal";
+import { AddUserModal } from "./AddUserModal";
 import { OrderExitModal } from "./OrderExitModal";
 
 export {
@@ -64,6 +64,6 @@ export {
   OrderTakeAway,
   OrderReserve,
   OrderInPlace,
-  InvateModal,
+  AddUserModal,
   OrderExitModal,
 };

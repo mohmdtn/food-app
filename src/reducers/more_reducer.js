@@ -24,8 +24,8 @@ const more_reducer = (state, action) => {
     return { ...state, order_page: {...state.order_page, page: action.payload.page, sub: action.payload.sub} };
   }
 
-  if (action.type === "INVATE_MODAL") {
-    return { ...state, invate_modal: action.payload };
+  if (action.type === "ADD_USER_MODAL") {
+    return { ...state, add_user_modal: action.payload };
   }
 
   if (action.type === "EXIT_MODAL") {

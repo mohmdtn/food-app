@@ -2,7 +2,7 @@ import React from "react";
 import listWhiteIcon from "../../pictures/icons/listWhiteIcon.svg";
 import leaveIcon from "../../pictures/icons/leaveicon.svg";
 import { MoreContext } from "../../contexts/more_context";
-import { OrderTakeAway, OrderReserve, OrderInPlace, InvateModal, OrderExitModal } from "../../components";
+import { OrderTakeAway, OrderReserve, OrderInPlace, AddUserModal, OrderExitModal } from "../../components";
 
 export const Order = () => {
   const {showOrderPage, order_page, exitModal} = React.useContext(MoreContext);
@@ -34,7 +34,7 @@ export const Order = () => {
           <OrderInPlace />
 
           {/* modals */}
-          <InvateModal />
+          <AddUserModal />
           <OrderExitModal />
           {/* modals */}
         </section>

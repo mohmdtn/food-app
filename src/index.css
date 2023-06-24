@@ -1705,7 +1705,7 @@ main {
 
 
 /* modals */
-.invate-alert, .exit-modal {
+.add_user_modal, .exit-modal {
   text-align: center;
   border-radius: var(--radius-18);
   background-color: var(--white);
@@ -1713,14 +1713,14 @@ main {
   width: 380px;
 }
 
-.invate-alert h6, .exit-modal h6 {
+.add_user_modal h6, .exit-modal h6 {
   font-size: var(--font-14);
   font-weight: bold;
   margin-bottom: 5px;
   color: var(--dark2);
 }
 
-.invate-alert p, .exit-modal p {
+.add_user_modal p, .exit-modal p {
   font-size: var(--font-8);
   color: var(--smoky4);
   max-width: 180px;

@@ -11,7 +11,7 @@ import {
   } from '@persian-tools/persian-mobile-datepicker';
 
 export const OrderReserve = () => {
-  const { showOrderPage, order_page, invateModal } = React.useContext(MoreContext);
+  const { showOrderPage, order_page, addUserModal } = React.useContext(MoreContext);
   const config =  {
     year: {
       caption: {
@@ -95,7 +95,7 @@ export const OrderReserve = () => {
             <OrderFoodInfo id={1} name={"محمد تقی نسب"} number={"09116916763"} />
             <OrderFoodInfo id={4} name={"آرشام جعفریان"} number={"09111111211"} />
           </section>
-          <button className="button button-md add-button" onClick={() => invateModal(true)}>
+          <button className="button button-md add-button" onClick={() => addUserModal(true)}>
             <img src={userAddIcon} alt="" />
           </button>
         </section>
