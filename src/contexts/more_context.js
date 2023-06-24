@@ -21,7 +21,7 @@ const initialState = {
     page: "takeAway",
     sub: "all"
   },
-  invate_modal: false,
+  invate_modal: true,
   add_user_modal: false,
   exit_modal: false,
 };
@@ -63,8 +63,12 @@ export const MoreProvider = ({ children }) => {
     dispatch({ type: "EXIT_MODAL", payload: state });
   }
 
+  const invateModal = (state) => {
+    dispatch({ type: "INVATE_MODAL", payload: state });
+  }
+
   return (
-    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, addUserModal, exitModal }}>
+    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, addUserModal, exitModal, invateModal }}>
       {children}
     </MoreContext.Provider>
   );

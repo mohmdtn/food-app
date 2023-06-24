@@ -32,6 +32,10 @@ const more_reducer = (state, action) => {
     return { ...state, exit_modal: action.payload };
   }
 
+  if (action.type === "INVATE_MODAL") {
+    return { ...state, invate_modal: action.payload };
+  }
+
   throw new Error(`No Matching "${action.type}" - action type`);
 };
 

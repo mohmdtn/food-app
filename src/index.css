@@ -1709,7 +1709,7 @@ main {
   all: unset !important;
 }
 
-.add_user_modal, .exit-modal {
+.add_user_modal, .exit-modal, .invate-modal {
   text-align: center;
   border-radius: var(--radius-18);
   background-color: var(--white);
@@ -1718,14 +1718,21 @@ main {
   font-family: "Estedad";
 }
 
-.add_user_modal h6, .exit-modal h6 {
+.add_user_modal h6, .exit-modal h6, .invate-modal h6, .invate-modal h5 {
   font-size: var(--font-14);
   font-weight: bold;
   margin-bottom: 5px;
   color: var(--dark2);
 }
 
-.add_user_modal p, .exit-modal p {
+.invate-modal h5 span {
+  border-bottom: 2px dotted var(--dark2);
+  direction: ltr;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.add_user_modal p, .exit-modal p, .invate-modal p {
   font-size: var(--font-8);
   color: var(--smoky4);
   max-width: 180px;
