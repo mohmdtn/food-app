@@ -9,6 +9,7 @@ import { ProfileOrders } from "./profile/ProfileOrders";
 import { ContactUs } from "./profile/ContactUs";
 import { ProfileExit } from "./profile/ProfileExit";
 import { Order } from "./order/Order";
+import { CoffePage } from "./coffe/CoffePage";
 
 export {
   Welcome,
@@ -22,4 +23,5 @@ export {
   ContactUs,
   ProfileExit,
   Order,
+  CoffePage,
 };

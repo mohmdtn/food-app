@@ -36,6 +36,14 @@ const more_reducer = (state, action) => {
     return { ...state, invate_modal: action.payload };
   }
 
+  if (action.type === "COFFE_INFO") {
+    return { ...state, coffe_info: action.payload };
+  }
+
+  if (action.type === "CANCEL_RESERVE_MODAL") {
+    return { ...state, cancel_reserve_modal: action.payload };
+  }
+
   throw new Error(`No Matching "${action.type}" - action type`);
 };
 

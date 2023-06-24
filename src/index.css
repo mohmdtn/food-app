@@ -854,27 +854,39 @@ main {
   font-size: 14px;
 }
 
-.coffe .info div {
+.coffe .info div.wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.coffe .info div h5 {
+.coffe .info div.wrapper h5 {
   font-size: var(--font-16);
   margin-bottom: 0;
 }
 
-.coffe .info div p {
+.coffe .info div.wrapper p {
   font-size: var(--font-10);
   color: var(--smoky3);
   margin-bottom: 0;
 }
 
-.coffe .info div section{
-  width: 32px;
+.coffe .info div.wrapper section{
+  text-align: center;
+  width: 50px;
 }
 
-.coffe .info div h6 {
+.coffe .info div.wrapper section p{
+  font-size: 7px;
+  color: var(--dark2);
+}
+
+.coffe .info div.wrapper section .more-info{
+  width: 23px;
+  cursor: pointer;
+}
+
+.coffe .info div.wrapper h6 {
   height: 44px;
   font-size: var(--font-9);
   box-shadow: 0px 2px 28px #4b4b5814;
@@ -886,15 +898,104 @@ main {
   padding: 9px;
 }
 
-.coffe .info div div {
+.coffe .info div.wrapper div {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-14);
   box-shadow: 0px 2px 28px #4b4b5814;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.coffe .info button {
+  height: 44px;
+}
+
+.coffe .more-info-section {
+  overflow: hidden;
+  height: 0px;
+  transition: .4s;
+}
+
+.coffe .more-info-section .numbers {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.coffe .more-info-section h5 {
+  font-size: var(--font-12);
+  font-weight: bold;
+}
+
+.coffe .more-info-section .numbers div h5 {
+  direction: ltr;
+  text-align: left;
+}
+
+.coffe .more-info-section .work-hour div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 28px;
+  font-size: var(--font-12);
+  border: 1px solid var(--dark2);
+  border-radius: var(--radius-36);
+  padding: 0 10px;
+  margin-bottom: 14px;
+}
+
+.coffe .more-info-section .work-hour div p {
+  margin-bottom: 0;
+}
+
+.coffe .more-info-section .show-less{
+  font-size: 20px;
+  text-align: center;
+  width: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.coffe .more-info-section .show-less p {
+  font-size: var(--font-8);
+  margin-bottom: 0;
+  margin-top: -7px;
+}
+
+.coffe .sticky-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.coffe .sticky-header div {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffe .sticky-header h5 {
+  font-size: var(--font-16);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.coffe .sticky-header .logo {
+  background-color: var(--gold);
+}
+
+.coffe .sticky-header .cart {
+  background-color: var(--dark2);
+}
 
 /* foods */
 .foods .category-title{
@@ -1709,7 +1810,7 @@ main {
   all: unset !important;
 }
 
-.add_user_modal, .exit-modal, .invate-modal {
+.add_user_modal, .exit-modal, .invate-modal, .cancel-reserve-modal {
   text-align: center;
   border-radius: var(--radius-18);
   background-color: var(--white);
@@ -1718,11 +1819,15 @@ main {
   font-family: "Estedad";
 }
 
-.add_user_modal h6, .exit-modal h6, .invate-modal h6, .invate-modal h5 {
+.add_user_modal h6, .exit-modal h6, .invate-modal h6, .invate-modal h5,  .cancel-reserve-modal h6 {
   font-size: var(--font-14);
   font-weight: bold;
   margin-bottom: 5px;
   color: var(--dark2);
+}
+
+.cancel-reserve-modal button {
+  height: 44px;
 }
 
 .invate-modal h5 span {

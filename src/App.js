@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Welcome, Register, Home, Search, ProfileIndex, ProfileInfo, ProfileWallet, ProfileOrders, ContactUs, ProfileExit, Order } from "./pages";
+import { Welcome, Register, Home, Search, ProfileIndex, ProfileInfo, ProfileWallet, ProfileOrders, ContactUs, ProfileExit, Order, CoffePage } from "./pages";
 import { InvateModal } from "./components";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/coffe" element={<CoffePage />} />
 
           <Route path="/profile">
             <Route index element={<ProfileIndex />} />

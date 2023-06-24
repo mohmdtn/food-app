@@ -24,9 +24,11 @@ export const Home = () => {
         <section className="home">
           <section className="head pt-4 d-flex justify-content-around align-items-center text-center">
             <div>
-              <Badge badgeContent={1} color="secondary" sx={{ "& .MuiBadge-badge": { backgroundColor: '#f54749' } }}>
-                <img src={listIcon} alt="" />
-              </Badge>
+              <Link to="/order">
+                <Badge badgeContent={1} color="secondary" sx={{ "& .MuiBadge-badge": { backgroundColor: '#f54749' } }}>
+                  <img src={listIcon} alt="" />
+                </Badge>
+              </Link>
             </div>
             <div>
               <p className="mb-1 fw-bold">مازندران/ بابل/ شهرک بهزاد...</p>

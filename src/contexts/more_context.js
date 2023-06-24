@@ -21,9 +21,11 @@ const initialState = {
     page: "takeAway",
     sub: "all"
   },
-  invate_modal: true,
+  invate_modal: false,
   add_user_modal: false,
   exit_modal: false,
+  coffe_info: "0",
+  cancel_reserve_modal: false,
 };
 
 export const MoreContext = React.createContext();
@@ -66,9 +68,17 @@ export const MoreProvider = ({ children }) => {
   const invateModal = (state) => {
     dispatch({ type: "INVATE_MODAL", payload: state });
   }
+  
+  const coffeInfo = (heaight) => {
+    dispatch({ type: "COFFE_INFO", payload: heaight });
+  }
+
+  const cancelReserveModal = (state) => {
+    dispatch({ type: "CANCEL_RESERVE_MODAL", payload: state });
+  }
 
   return (
-    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, addUserModal, exitModal, invateModal }}>
+    <MoreContext.Provider value={{ ...state, showMore, faqItem, showContactUs, showLogout, showOrderInfo, showOrderPage, addUserModal, exitModal, invateModal, coffeInfo, cancelReserveModal }}>
       {children}
     </MoreContext.Provider>
   );
