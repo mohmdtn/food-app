@@ -1705,12 +1705,17 @@ main {
 
 
 /* modals */
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  all: unset !important;
+}
+
 .add_user_modal, .exit-modal {
   text-align: center;
   border-radius: var(--radius-18);
   background-color: var(--white);
   box-shadow: 0px 2px 28px #4b4b5814;
   width: 380px;
+  font-family: "Estedad";
 }
 
 .add_user_modal h6, .exit-modal h6 {
