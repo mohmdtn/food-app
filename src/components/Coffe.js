@@ -72,22 +72,24 @@ export const Coffe = () => {
           <div><img src={logo} alt="" /></div>
         </div>
 
-        <section className="row m-0">
-          <section className="col p-0">
-            <button className="button" onClick={() => addUserModal(true)}><img src={profileAddIcon} alt="" /></button>
-            <AddUserModal />
+        <section className="coffe-profile-buttons">
+          <section className="row m-0">
+            <section className="col p-0">
+              <button className="button" onClick={() => addUserModal(true)}><img src={profileAddIcon} alt="" /></button>
+              <AddUserModal />
+            </section>
+            {/* <section className="col-4 p-0 pe-2">
+              <button className="button-3 button-red">3 نفر<img className="me-1" src={listIcon} alt="" /></button>
+            </section> */}
           </section>
-          {/* <section className="col-4 p-0 pe-2">
-            <button className="button-3 button-red">3 نفر<img className="me-1" src={listIcon} alt="" /></button>
-          </section> */}
-        </section>
-        <section className="row m-0 mt-2">
-          <section className="col p-0">
-            <button className="button">رزرو میز</button>
-          </section>
-          <section className="col-4 p-0 pe-2">
-            <button className="button-3 button-red" onClick={() => cancelReserveModal(true)}>لغو رزرو</button>
-            <CancelReserveModal />
+          <section className="row m-0 mt-2">
+            <section className="col p-0">
+              <button className="button">رزرو میز</button>
+            </section>
+            <section className="col-4 p-0 pe-2">
+              <button className="button-3 button-red" onClick={() => cancelReserveModal(true)}>لغو رزرو</button>
+              <CancelReserveModal />
+            </section>
           </section>
         </section>
 
@@ -111,7 +113,7 @@ export const Coffe = () => {
       {/* filter buttons */}
 
       {/* foods section */}
-      <section className="foods px-4">
+      <section className="foods row m-0 px-4">
         <h5 className="category-title">غذای دریایی</h5>
         <CoffeFood />
         <CoffeFood />

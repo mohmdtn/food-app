@@ -10,7 +10,8 @@ export const SearchItem = ({ bg, rate, name, foods, address, delivery }) => {
   const { showMore } = React.useContext(MoreContext);
 
   return (
-    <section className="search-item mt-4" onClick={() => showMore("80vh", "1")}>
+    <section className="col-lg-4 col-md-6 col-12 p-md-2 p-0">
+      <section className="search-item mt-4" onClick={() => showMore("80vh", "1")}>
         <section className="bg"  style={{backgroundImage: `url(${bg})`}}>
             <div className="logo"><img src={logo} alt="" /></div>
             <div className="rate">
@@ -36,6 +37,7 @@ export const SearchItem = ({ bg, rate, name, foods, address, delivery }) => {
                 </div>
             </section>
         </section>
+      </section>
     </section>
   )
 }

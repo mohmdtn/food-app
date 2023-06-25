@@ -43,9 +43,11 @@ export const Search = () => {
           {/* filter buttons slider */}
   
           {/* search content */}
+         <div className="row m-0">
           <SearchItem bg={search1} rate={4} name={"کافه رستوران دنج نشین"} foods={"فست فود ، پیتزا ، کنتاکی ، نوشیدنی گرم و..."} delivery={"8,000"} address={"مازندران/ بابل/روبه روی دانشگاه نوشیروانی ساختمان پولونیوم..."} />
           <SearchItem bg={search2} rate={3} name={"کباب سرای دنج نشین"} foods={"انواع کباب همراه با برنج و نان تازه"} delivery={"12,000"} address={"مازندران/ بابل/روبه روی دانشگاه نوشیروانی ساختمان پولونیوم..."} />
           <SearchItem bg={search3} rate={3} name={"کباب سرای دنج نشین"} foods={"انواع کباب همراه با برنج و نان تازه"} address={"مازندران/ بابل/روبه روی دانشگاه نوشیروانی ساختمان پولونیوم..."} />
+         </div>
           {/* search content */}
 
 

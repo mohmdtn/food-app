@@ -263,6 +263,7 @@ main {
 
 .auth-page img {
   width: 70%;
+  max-width: 268px;
 }
 
 .auth-page .head {
@@ -290,7 +291,6 @@ main {
 }
 
 .auth-page .number-img img {
-  max-width: 63%;
   position: relative;
   bottom: -30px;
 }
@@ -300,6 +300,8 @@ main {
   text-align: center;
   letter-spacing: 4px;
   border: 1px solid var(--dark);
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .auth-page .number-input::placeholder {
@@ -685,6 +687,7 @@ main {
 
 .search .search-section .search-box input {
   padding-right: 40px;
+  min-width: 200px;
 }
 
 .search .search-section .search-box img {
@@ -815,7 +818,7 @@ main {
 }
 
 .coffe .bg {
-  height: 181px;
+  height: 240px;
   background-image: url("../src/pictures/test/search2.png");
   background-position: center;
   background-size: cover;
@@ -998,6 +1001,15 @@ main {
 
 .coffe .sticky-header .cart {
   background-color: var(--dark2);
+}
+
+.coffe-profile-buttons {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.coffe-profile-buttons button {
+  max-width: 100%;
 }
 
 /* foods */
@@ -1859,12 +1871,6 @@ main {
 
 
 /* media query */
-@media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 992px) {
-
-}
 
 @media screen and (max-width: 768px) {
 /* home */
@@ -1873,12 +1879,17 @@ main {
   }
 /* home */
 
-
 /* profile */
   .logout {
     width: 100%;
   }
 /* profile */
+
+/* coffe */
+  .coffe .bg {
+    height: 181px;
+  }
+/* coffe */
 }
 
 @media screen and (max-width: 576px) {
@@ -1923,6 +1934,18 @@ main {
     width: 85px;
   }
   /* order */
+
+  /* coffe */
+  .foods {
+    padding: 10px !important;
+  }
+  /* coffe */
+
+  /* search */
+  .search {
+    padding: 0 8px;
+  }
+  /* search */
 }
 
 @media screen and (max-width: 320px) {
