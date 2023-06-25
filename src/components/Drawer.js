@@ -34,7 +34,7 @@ export const Drawer = ({ children }) => {
 
   return (
     <section
-      className="more"
+      className="more container p-0"
       style={{ height: show_more.height }}
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}

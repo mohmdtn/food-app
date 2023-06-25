@@ -1525,22 +1525,12 @@ main {
   color: var(--smoky4);
 }
 
-.faq .new-ticket button:nth-child(1) {
-  width: 230px;
+.faq .new-ticket button, .faq .old-tickets button {
+  width: 100%;
   margin: 0;
 }
 
-.faq .new-ticket button:nth-child(2) {
-  width: 110px;
-  margin: 0;
-}
-
-.faq .old-tickets button:nth-child(1) {
-  width: 230px;
-  margin: 0;
-}
 .faq .old-tickets button:nth-child(2) {
-  width: 110px;
   margin: 0;
   background-color: var(--red);
   color: var(--white);
@@ -1618,10 +1608,10 @@ main {
   justify-content: center;
   align-items: center;
   height: 44px;
-  min-width: 100px;
-  width: 167px;
+  width: 100%;
+  max-width: 283px;
   border-radius: var(--radius-14);
-  margin: 5px;
+  margin: 5px auto;
   cursor: pointer;
 }
 
@@ -1884,6 +1874,11 @@ main {
 /* home */
 
 
+/* profile */
+  .logout {
+    width: 100%;
+  }
+/* profile */
 }
 
 @media screen and (max-width: 576px) {
@@ -1900,6 +1895,7 @@ main {
     margin-left: 6px;
   }
   /* home */
+
 }
 
 @media screen and (max-width: 376px) {
@@ -1956,4 +1952,10 @@ main {
     width: 130px;
   }
   /* order */
+
+  /* profile */
+  .profile .content .wallet-history .item {
+    padding: 12px 7px;
+  }
+  /* profile */
 }

@@ -11,9 +11,9 @@ export const Logout = () => {
           <p>با خروج حساب کاربری شما با وارد کردن شماره تلفن و تایید کد ارسال شده قابلیت ورود دوباره را خواهید داشت.</p>
           <img src={logout} alt="" />
         </div>
-        <section className="d-flex justify-content-between">
-          <button className="button1">بله <img className="me-2" src={logoutIcon} alt="" /></button>
-          <button className="button2">خیر</button>
+        <section className="row m-0 w-100">
+          <section className="col-6 p-0 ps-1"><button className="button1">بله <img className="me-2" src={logoutIcon} alt="" /></button></section>
+          <section className="col-6 p-0 pe-1"><button className="button2">خیر</button></section>
         </section>
       </section>
     </section>

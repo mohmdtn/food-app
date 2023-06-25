@@ -33,21 +33,21 @@ export const ProfileExit = () => {
         <section className="content d-flex flex-grow-1">
 
           {/* logout section */}
-          <section className={`w-100 ${logout.original === "exit" ? "d-flex" : "d-none"}`}>
+          <section className={`w-100 justify-content-center ${logout.original === "exit" ? "d-flex" : "d-none"}`}>
             <Logout />
           </section>
           {/* logout section */}
 
 
           {/* delete account section */}
-          <section className={`w-100 ${logout.original === "delete" ? "d-flex" : "d-none"}`}>
+          <section className={`w-100 justify-content-center ${logout.original === "delete" ? "d-flex" : "d-none"}`}>
             <DeleteAccount />
           </section>
           {/* delete account section */}
 
 
           {/* change number section */}
-          <section className={`w-100 ${logout.original === "change" ? "d-flex" : "d-none"}`}>
+          <section className={`w-100 justify-content-center ${logout.original === "change" ? "d-flex" : "d-none"}`}>
             <ChangeNumber />
           </section>
           {/* change number section */}

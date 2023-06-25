@@ -38,9 +38,9 @@ export const Faq = () => {
           </section>
           <textarea className="form-control form-text mt-4" name="" id="" rows="6" placeholder="متن" ></textarea>
         </section>
-        <section className="d-flex justify-content-between">
-          <button className="button button-md">ارسال <img className="me-2" src={penWriteIcon} alt="" /></button>
-          <button className="button-gold button-gold-md" onClick={() => showContactUs("faq", "old-ticket")}>پیام های قبل</button>
+        <section className="d-flex justify-content-between row m-0">
+          <div className="col-8 p-0 ps-1"><button className="button button-md">ارسال <img className="me-2" src={penWriteIcon} alt="" /></button></div>
+          <div className="col-4 p-0 pe-1"><button className="button-gold button-gold-md me-auto" onClick={() => showContactUs("faq", "old-ticket")}>پیام های قبل</button></div>
         </section>
       </section>
       {/* new ticket */}
@@ -52,9 +52,9 @@ export const Faq = () => {
           <FaqItem id={2} question={"چگونه میتوان از سیستم دلیوری برنامه استواده کرد؟"} answer={"با دنج نشین کردن یک جا شما از تخفیفات آنجا برخوردار میشوید ولی باید دقت کنید که فقط یک بار در ماه قادر به نجنشین کردن هستید و پس از انتخاب و یا حذف شما تا 30 روز از انتخاب کردن محرومید."} />
           <FaqItem id={3} question={"مزایای دنج نشین کردن هر جا چیست؟"} answer={"با دنج نشین کردن یک جا شما از تخفیفات آنجا برخوردار میشوید ولی باید دقت کنید که فقط یک بار در ماه قادر به نجنشین کردن هستید و پس از انتخاب و یا حذف شما تا 30 روز از انتخاب کردن محرومید."} />
         </section>
-        <section className="d-flex justify-content-between px-4">
-          <button className="button button-md" onClick={() => showContactUs("faq", "new-ticket")}>ارسال جدید <img className="me-2" src={penWriteIcon} alt="" /></button>
-          <button className="button-gold button-gold-md">حذف پیام</button>
+        <section className="d-flex justify-content-between px-4 row m-0">
+          <div className="col-8 p-0 ps-1"><button className="button button-md" onClick={() => showContactUs("faq", "new-ticket")}>ارسال جدید <img className="me-2" src={penWriteIcon} alt="" /></button></div>
+          <div className="col-4 p-0 pe-1"><button className="button-gold button-gold-md me-auto">حذف پیام</button></div>
         </section>
       </section>
       {/* old tickets */}
