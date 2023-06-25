@@ -242,8 +242,8 @@ html {
 /*  */
 
 main {
-  max-width: 400px;
   margin: 0 auto;
+  max-width: 1140px;
   background-color: var(--site-bg);
   color: var(--dark);
   font-family: "Estedad";
@@ -473,6 +473,7 @@ main {
   font-size: var(--font-12);
   overflow: hidden;
   width: 280px;
+  height: 65px;
 }
 
 .home .economical .food-preview h5 {
@@ -493,7 +494,7 @@ main {
 }
 
 .home .economical .food-preview .food-image {
-  height: 60px;
+  height: 65px;
   width: 103px;
   /* background-image: url("../src/pictures/test/food1.png"); */
   background-position: center;
@@ -529,6 +530,7 @@ main {
   overflow: hidden;
   text-align: center;
   box-shadow: 0px 2px 28px #4b4b581a;
+  margin: 0 auto;
 }
 
 .home .denj .rate {
@@ -573,6 +575,7 @@ main {
   overflow: hidden;
   text-align: center;
   box-shadow: 0px 2px 28px #4b4b581a;
+  margin: 0 auto;
 }
 
 .home .offer .off {
@@ -616,7 +619,7 @@ main {
 .more {
   position: fixed;
   bottom: 0;
-  width: 400px;
+  max-width: 1140px;
   background-color: var(--site-bg2);
   border-radius: 36px 36px 0 0;
   z-index: 3;
@@ -1863,3 +1866,74 @@ main {
 }
 
 /* end of order page */
+
+
+/* media query */
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+/* home */
+  .home .economical {
+    justify-content: space-around;
+  }
+/* home */
+}
+
+@media screen and (max-width: 576px) {
+  /* home */
+  .home .denj {
+    width: 160px;
+    height: 160px;
+  }
+  .home .denj .name{
+    padding: 5px 13px;
+  }
+
+  .home .more .economical .name{
+    margin-left: 6px;
+  }
+  /* home */
+}
+
+@media screen and (max-width: 376px) {
+  /* home */
+  .home .more .economical .name{
+    margin-left: 6px;
+  }
+
+  .home .economical .food-preview{
+    width: 265px;
+  }
+  .home .economical .name{
+    margin-left: 6px;
+  }
+  .home .economical .food-preview .food-image{
+    width: 90px;
+  }
+  /* home */
+}
+
+@media screen and (max-width: 320px) {
+  /* home */
+  .home .denj {
+    width: 130px;
+    height: 130px;
+  }
+  .home .denj .name{
+    padding: 5px 13px;
+  }
+
+  .home .economical .food-preview{
+    font-size: var(--font-10);
+    width: 232px;
+  }
+  .home .economical .food-preview .food-image{
+    width: 80px;
+  }
+  /* home */
+}

@@ -57,7 +57,7 @@ export const DrawerHome = () => {
 
   return (
     <>
-      <section className="more px-3" style={{height: show_more.height}} onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+      <section className="more container px-md-3 px-2" style={{height: show_more.height}} onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
         <section className={`${ show_more.item === 'economical' ? 'd-block' : 'd-none' }`}>
             <div className="sticky-top bg-white pt-4">
                 <div className="close-btn">
@@ -69,23 +69,25 @@ export const DrawerHome = () => {
               </div>
             </div>
 
-            <div className="col pb-3">
-              <Economical name={"بشقاب ماهی 3 نفره"} image={food1} price={"220,000"} oldPrice={"420,000"} coffe={"کافه رستوران دنج نشین"} rate={"4.2"} logo={logocoffe} />
-            </div>
-            <div className="col pb-3">
-              <Economical name={"کباب کوبیده غول آسا"} image={food2} price={"320,000"} coffe={"کافه رستوران صدر اعظم"} rate={"5"} logo={logocoffe} />
-            </div>
-            <div className="col pb-3">
-              <Economical name={"کیک شکلاتی روز"} image={food3} price={"80,000"} coffe={"کافه قدیم"} rate={"4.1"} />
-            </div>
-            <div className="col pb-3">
-              <Economical name={"بشقاب ماهی 3 نفره"} image={food1} price={"220,000"} oldPrice={"420,000"} coffe={"کافه رستوران دنج نشین"} rate={"4.2"} logo={logocoffe} />
-            </div>
-            <div className="col pb-3">
-              <Economical name={"کباب کوبیده غول آسا"} image={food2} price={"320,000"} oldPrice={"440,000"} coffe={"کافه رستوران صدر اعظم"} rate={"5"} logo={logocoffe} />
-            </div>
-            <div className="col pb-3">
-              <Economical name={"کیک شکلاتی روز"} image={food3} price={"80,000"} oldPrice={""} coffe={"کافه قدیم"} rate={"4.1"} />
+            <div className="row m-0">
+              <div className="col-lg-4 col-md-6 col-12 pb-3">
+                <Economical name={"بشقاب ماهی 3 نفره"} image={food1} price={"220,000"} oldPrice={"420,000"} coffe={"کافه رستوران دنج نشین"} rate={"4.2"} logo={logocoffe} />
+              </div>
+              <div className="col-lg-4 col-md-6 col-12 pb-3">
+                <Economical name={"کباب کوبیده غول آسا"} image={food2} price={"320,000"} coffe={"کافه رستوران صدر اعظم"} rate={"5"} logo={logocoffe} />
+              </div>
+              <div className="col-lg-4 col-md-6 col-12 pb-3">
+                <Economical name={"کیک شکلاتی روز"} image={food3} price={"80,000"} coffe={"کافه قدیم"} rate={"4.1"} />
+              </div>
+              <div className="col-lg-4 col-md-6 col-12 pb-3">
+                <Economical name={"بشقاب ماهی 3 نفره"} image={food1} price={"220,000"} oldPrice={"420,000"} coffe={"کافه رستوران دنج نشین"} rate={"4.2"} logo={logocoffe} />
+              </div>
+              <div className="col-lg-4 col-md-6 col-12 pb-3">
+                <Economical name={"کباب کوبیده غول آسا"} image={food2} price={"320,000"} oldPrice={"440,000"} coffe={"کافه رستوران صدر اعظم"} rate={"5"} logo={logocoffe} />
+              </div>
+              <div className="col-lg-4 col-md-6 col-12 pb-3">
+                <Economical name={"کیک شکلاتی روز"} image={food3} price={"80,000"} oldPrice={""} coffe={"کافه قدیم"} rate={"4.1"} />
+              </div>
             </div>
         </section>
 
@@ -102,21 +104,21 @@ export const DrawerHome = () => {
               </div>
             </div>
 
-            <div className="row">
-                <div className="col-6 mb-3">
-                    <Denj name={"کافه دنج نشین"} bg={denj1} rate={"100"} />
+            <div className="row m-0">
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
+                  <Denj name={"کافه دنج نشین"} bg={denj1} rate={"100"} />
                 </div>
 
-                <div className="col-6 mb-3">
-                <Denj name={"رستوران سنتی دنج نشین"} bg={denj3} rate={"90"} />
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
+                  <Denj name={"رستوران سنتی دنج نشین"} bg={denj3} rate={"90"} />
                 </div>
 
-                <div className="col-6 mb-3">
-                    <Denj name={"کافه دنج نشین"} bg={denj2} rate={"20"} />
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
+                  <Denj name={"کافه دنج نشین"} bg={denj2} rate={"20"} />
                 </div>
 
-                <div className="col-6 mb-3">
-                    <Denj name={"کافه دنج نشین"} bg={denj4} rate={"10"} />
+                <div className="col-lg-3 col-md-4 col-6 mb-3">
+                  <Denj name={"کافه دنج نشین"} bg={denj4} rate={"10"} />
                 </div>
             </div>
 
@@ -135,22 +137,22 @@ export const DrawerHome = () => {
               </div>
             </div>
 
-            <div className="row">
-                <div className="col-4 mb-3 p-1">
-                    <Offer name={"بشقاب ماهی 3 نفره"} bg={offer1} off={"90"} price={"220,000"} />
-                </div>
+            <div className="row m-0">
+              <div className="col-lg-2 col-md-3 col-6 mb-3 p-1">
+                <Offer name={"بشقاب ماهی 3 نفره"} bg={offer1} off={"90"} price={"220,000"} />
+              </div>
 
-                <div className="col-4 mb-3 p-1">
-                    <Offer name={"بشقاب ماهی 3 نفره"} bg={offer2} off={"90"} price={"220,000"} />
-                </div>
+              <div className="col-lg-2 col-md-3 col-6 mb-3 p-1">
+                <Offer name={"بشقاب ماهی 3 نفره"} bg={offer2} off={"90"} price={"220,000"} />
+              </div>
 
-                <div className="col-4 mb-3 p-1">
-                    <Offer name={"بشقاب ماهی 3 نفره"} bg={offer3} off={"90"} price={"220,000"} />
-                </div>
+              <div className="col-lg-2 col-md-3 col-6 mb-3 p-1">
+                <Offer name={"بشقاب ماهی 3 نفره"} bg={offer3} off={"90"} price={"220,000"} />
+              </div>
 
-                <div className="col-4 mb-3 p-1">
-                    <Offer name={"بشقاب ماهی 3 نفره"} bg={offer1} off={"90"} price={"220,000"} />
-                </div>
+              <div className="col-lg-2 col-md-3 col-6 mb-3 p-1">
+                <Offer name={"بشقاب ماهی 3 نفره"} bg={offer1} off={"90"} price={"220,000"} />
+              </div>
             </div>
 
         </section>

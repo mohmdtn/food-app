@@ -20,7 +20,7 @@ export const Home = () => {
   
   else {
     return (
-      <main>
+      <main class>
         <section className="home">
           <section className="head pt-4 d-flex justify-content-around align-items-center text-center">
             <div>
