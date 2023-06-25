@@ -1882,6 +1882,8 @@ main {
     justify-content: space-around;
   }
 /* home */
+
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1916,6 +1918,15 @@ main {
     width: 90px;
   }
   /* home */
+
+  /* order */
+  .add_user_modal, .exit-modal, .invate-modal, .cancel-reserve-modal {
+    width: 340px;
+  }
+  .order .header button{
+    width: 85px;
+  }
+  /* order */
 }
 
 @media screen and (max-width: 320px) {
@@ -1934,6 +1945,15 @@ main {
   }
   .home .economical .food-preview .food-image{
     width: 80px;
-  }
+  } 
   /* home */
+
+  /* order */
+  .add_user_modal, .exit-modal, .invate-modal, .cancel-reserve-modal {
+    width: 300px;
+  }
+  .order .content .cost .amount button{
+    width: 130px;
+  }
+  /* order */
 }
