@@ -115,7 +115,7 @@ body {
   border-radius: var(--radius-14);
   width: 100%;
   max-width: 450px;
-  height: 44px;
+  height: 43px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +125,7 @@ body {
   color: var(--dark2);
   font-weight: bold;
   transition: .3s;
+  border: 1px solid var(--gold);
 }
 
 .button-gold svg{
@@ -140,7 +141,6 @@ body {
 .button-gold-active {
   background-color: #dbbe8f1f;
   color: var(--gold);
-  border: 1px solid var(--gold);
 }
 
 /* .title {
@@ -375,7 +375,7 @@ main {
   position: relative;
 }
 
-.home .swiper-slide a {
+.home .swiper-slide a, .more a {
   all: unset;
 }
 
