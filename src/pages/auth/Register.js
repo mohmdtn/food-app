@@ -1,5 +1,6 @@
 import { HiArrowRight } from 'react-icons/hi';
 import image from '../../pictures/number.svg';
+import { Link } from 'react-router-dom';
 
 export const Register = () => {
   return (
@@ -14,7 +15,7 @@ export const Register = () => {
                         <input className="form-control number-input" placeholder="شماره تلفن" type="text" />
                     </div>
                     <div className="px-3">
-                        <button className="button"><HiArrowRight className='ms-2' />تایید شماره</button>
+                        <Link to="/home" className="button"><HiArrowRight className='ms-2' />تایید شماره</Link>
                     </div>
                 </section>
                 <div>

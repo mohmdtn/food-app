@@ -10,6 +10,7 @@ import { HiArrowLeft } from "react-icons/hi";
 import React from "react";
 import { FilterButtonSlider, SearchItem, SearchSkeleton, Drawer, Coffe } from "../../components";
 import { MoreContext } from "../../contexts/more_context";
+import { Link } from "react-router-dom";
 
 export const Search = () => {
   const { loading } = React.useContext(MoreContext);
@@ -24,7 +25,7 @@ export const Search = () => {
         <section className="search px-4">
           <div className="position-relative d-flex justify-content-center align-items-center">
             <h5 className="page-title py-4">جست و جو</h5>
-            <div className="back"><HiArrowLeft /></div>
+            <Link to="/home" className="back"><HiArrowLeft /></Link>
           </div>
           {/* search section */}
           <section className="search-section">
